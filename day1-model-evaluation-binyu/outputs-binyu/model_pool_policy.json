@@ -1,0 +1,58 @@
+{
+  "generated_at": "2026-06-22T14:39:24",
+  "provider": "SiliconFlow",
+  "classroom_policy": "学生从硅基流动模型池中选择候选模型进行论文阅读理解评测。参考答案中的 DeepSeek、Qwen、GLM、Kimi、Qwen-VL 为 baseline。",
+  "baseline_models": [
+    {
+      "label": "DeepSeek",
+      "id": "deepseek-ai/DeepSeek-V4-Flash"
+    },
+    {
+      "label": "GLM-5.2 (Zhipu)",
+      "id": "zai-org/GLM-5.2"
+    },
+    {
+      "label": "Kimi-K2.6 (Moonshot)",
+      "id": "Pro/moonshotai/Kimi-K2.6"
+    },
+    {
+      "label": "Qwen-VL-8B (Alibaba)",
+      "id": "Qwen/Qwen3-VL-8B-Instruct"
+    },
+    {
+      "label": "Qwen2.5-72B (Alibaba)",
+      "id": "Qwen/Qwen2.5-72B-Instruct"
+    }
+  ],
+  "selection_tracks": [
+    {
+      "track": "text_reading",
+      "required": true,
+      "min_candidates": 2,
+      "covers": [
+        "content_summarizer",
+        "info_extractor",
+        "translator",
+        "scenario_analyst",
+        "fact_checker"
+      ]
+    },
+    {
+      "track": "multimodal_reading",
+      "required": "if_available",
+      "min_candidates": 1,
+      "covers": [
+        "multimodal_analyst"
+      ]
+    }
+  ],
+  "routing_roles": [
+    "content_summarizer",
+    "info_extractor",
+    "translator",
+    "scenario_analyst",
+    "fact_checker",
+    "multimodal_analyst"
+  ],
+  "assessment_rule": "每个角色至少有一组主模型+兜底模型+失败条件。"
+}

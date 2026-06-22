@@ -1,0 +1,1402 @@
+[
+  {
+    "task": {
+      "id": "paper_summary_001",
+      "title": "论文创新点提炼",
+      "type": "text",
+      "prompt": "You are reviewing a paper abstract. Answer in exactly 3 sentences:\nSentence 1 — What problem does this paper solve?\nSentence 2 — What is the key method or architecture?\nSentence 3 — What is the main result or contribution?\n\nAbstract:\nAudio-visual speech separation (AVSS) aims to extract a target speech signal from a mixed signal by leveraging both auditory and visual (lip movement) cues. However, most existing AVSS methods exhibit complex architectures and rely on future context, operating offline, which renders them unsuitable for real-time applications. Inspired by the pipeline of RTFSNet, we propose a novel streaming AVSS model, named Swift-Net, which enhances the causal processing capabilities required for real-time applications. Swift-Net adopts a lightweight visual feature extraction module and an efficient fusion module for audio-visual integration. Additionally, Swift-Net employs Grouped SRUs to integrate historical information across different feature spaces, thereby improving the utilization efficiency of historical information. We further propose a causal transformation template to facilitate the conversion of non-causal AVSS models into causal counterparts. Experiments on three standard benchmark datasets (LRS2, LRS3, and VoxCeleb2) demonstrated that under causal conditions, our proposed Swift-Net exhibited outstanding performance, highlighting the potential of this method for processing speech in complex environments.",
+      "scoring_rubric": "5=三句话精准且无幻觉, 3=方向对但有遗漏, 1=严重错误或编造"
+    },
+    "model": {
+      "id": "deepseek-ai/DeepSeek-V4-Flash",
+      "label": "DeepSeek"
+    },
+    "score": 5,
+    "ok": true,
+    "output": {
+      "ok": true,
+      "text": "This paper addresses the problem that existing audio-visual speech separation methods have complex architectures and rely on future context, making them unsuitable for real-time applications. The key method is Swift-Net, a streaming model that uses a lightweight visual feature extraction module, an efficient fusion module, Grouped SRUs for integrating historical information, and a causal transformation template to convert non-causal models into causal counterparts. The main result is that Swift-Net achieves outstanding performance under causal conditions on three benchmark datasets (LRS2, LRS3, and VoxCeleb2), highlighting its potential for real-time speech processing in complex environments.",
+      "latency": 4.08,
+      "usage": {
+        "prompt_tokens": 272,
+        "completion_tokens": 244,
+        "total_tokens": 516,
+        "completion_tokens_details": {
+          "reasoning_tokens": 119
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 272
+      }
+    }
+  },
+  {
+    "task": {
+      "id": "paper_summary_001",
+      "title": "论文创新点提炼",
+      "type": "text",
+      "prompt": "You are reviewing a paper abstract. Answer in exactly 3 sentences:\nSentence 1 — What problem does this paper solve?\nSentence 2 — What is the key method or architecture?\nSentence 3 — What is the main result or contribution?\n\nAbstract:\nAudio-visual speech separation (AVSS) aims to extract a target speech signal from a mixed signal by leveraging both auditory and visual (lip movement) cues. However, most existing AVSS methods exhibit complex architectures and rely on future context, operating offline, which renders them unsuitable for real-time applications. Inspired by the pipeline of RTFSNet, we propose a novel streaming AVSS model, named Swift-Net, which enhances the causal processing capabilities required for real-time applications. Swift-Net adopts a lightweight visual feature extraction module and an efficient fusion module for audio-visual integration. Additionally, Swift-Net employs Grouped SRUs to integrate historical information across different feature spaces, thereby improving the utilization efficiency of historical information. We further propose a causal transformation template to facilitate the conversion of non-causal AVSS models into causal counterparts. Experiments on three standard benchmark datasets (LRS2, LRS3, and VoxCeleb2) demonstrated that under causal conditions, our proposed Swift-Net exhibited outstanding performance, highlighting the potential of this method for processing speech in complex environments.",
+      "scoring_rubric": "5=三句话精准且无幻觉, 3=方向对但有遗漏, 1=严重错误或编造"
+    },
+    "model": {
+      "id": "Qwen/Qwen2.5-72B-Instruct",
+      "label": "Qwen2.5-72B (Alibaba)"
+    },
+    "score": 5,
+    "ok": true,
+    "output": {
+      "ok": true,
+      "text": "This paper addresses the challenge of creating a real-time, streaming audio-visual speech separation (AVSS) model that can efficiently extract a target speech signal from mixed signals using both auditory and visual cues.\nThe key method involves the development of Swift-Net, a lightweight and efficient AVSS model that uses Grouped SRUs for integrating historical information and a causal transformation template to adapt non-causal models for real-time use.\nThe main contribution is the demonstration of Swift-Net's superior performance in real-time applications on three benchmark datasets (LRS2, LRS3, and VoxCeleb2), showcasing its potential for effective speech processing in complex, dynamic environments.",
+      "latency": 4.5,
+      "usage": {
+        "prompt_tokens": 297,
+        "completion_tokens": 133,
+        "total_tokens": 430,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 297
+      }
+    }
+  },
+  {
+    "task": {
+      "id": "paper_summary_001",
+      "title": "论文创新点提炼",
+      "type": "text",
+      "prompt": "You are reviewing a paper abstract. Answer in exactly 3 sentences:\nSentence 1 — What problem does this paper solve?\nSentence 2 — What is the key method or architecture?\nSentence 3 — What is the main result or contribution?\n\nAbstract:\nAudio-visual speech separation (AVSS) aims to extract a target speech signal from a mixed signal by leveraging both auditory and visual (lip movement) cues. However, most existing AVSS methods exhibit complex architectures and rely on future context, operating offline, which renders them unsuitable for real-time applications. Inspired by the pipeline of RTFSNet, we propose a novel streaming AVSS model, named Swift-Net, which enhances the causal processing capabilities required for real-time applications. Swift-Net adopts a lightweight visual feature extraction module and an efficient fusion module for audio-visual integration. Additionally, Swift-Net employs Grouped SRUs to integrate historical information across different feature spaces, thereby improving the utilization efficiency of historical information. We further propose a causal transformation template to facilitate the conversion of non-causal AVSS models into causal counterparts. Experiments on three standard benchmark datasets (LRS2, LRS3, and VoxCeleb2) demonstrated that under causal conditions, our proposed Swift-Net exhibited outstanding performance, highlighting the potential of this method for processing speech in complex environments.",
+      "scoring_rubric": "5=三句话精准且无幻觉, 3=方向对但有遗漏, 1=严重错误或编造"
+    },
+    "model": {
+      "id": "zai-org/GLM-5.2",
+      "label": "GLM-5.2 (Zhipu)"
+    },
+    "score": 5,
+    "ok": true,
+    "output": {
+      "ok": true,
+      "text": "This paper addresses the problem that existing audio-visual speech separation (AVSS) methods rely on complex, offline architectures requiring future context, making them unsuitable for real-time applications. The key method is Swift-Net, a streaming AVSS model that utilizes a lightweight visual feature extractor, an efficient audio-visual fusion module, and Grouped SRUs to integrate historical information, alongside a causal transformation template for converting non-causal models. The main contribution is that Swift-Net achieves outstanding performance under causal conditions across three standard benchmark datasets, demonstrating its potential for real-time speech processing in complex environments.",
+      "latency": 17.18,
+      "usage": {
+        "prompt_tokens": 280,
+        "completion_tokens": 882,
+        "total_tokens": 1162,
+        "completion_tokens_details": {
+          "reasoning_tokens": 763
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 280
+      }
+    }
+  },
+  {
+    "task": {
+      "id": "paper_summary_001",
+      "title": "论文创新点提炼",
+      "type": "text",
+      "prompt": "You are reviewing a paper abstract. Answer in exactly 3 sentences:\nSentence 1 — What problem does this paper solve?\nSentence 2 — What is the key method or architecture?\nSentence 3 — What is the main result or contribution?\n\nAbstract:\nAudio-visual speech separation (AVSS) aims to extract a target speech signal from a mixed signal by leveraging both auditory and visual (lip movement) cues. However, most existing AVSS methods exhibit complex architectures and rely on future context, operating offline, which renders them unsuitable for real-time applications. Inspired by the pipeline of RTFSNet, we propose a novel streaming AVSS model, named Swift-Net, which enhances the causal processing capabilities required for real-time applications. Swift-Net adopts a lightweight visual feature extraction module and an efficient fusion module for audio-visual integration. Additionally, Swift-Net employs Grouped SRUs to integrate historical information across different feature spaces, thereby improving the utilization efficiency of historical information. We further propose a causal transformation template to facilitate the conversion of non-causal AVSS models into causal counterparts. Experiments on three standard benchmark datasets (LRS2, LRS3, and VoxCeleb2) demonstrated that under causal conditions, our proposed Swift-Net exhibited outstanding performance, highlighting the potential of this method for processing speech in complex environments.",
+      "scoring_rubric": "5=三句话精准且无幻觉, 3=方向对但有遗漏, 1=严重错误或编造"
+    },
+    "model": {
+      "id": "Pro/moonshotai/Kimi-K2.6",
+      "label": "Kimi-K2.6 (Moonshot)"
+    },
+    "score": 5,
+    "ok": true,
+    "output": {
+      "ok": true,
+      "text": "This paper solves the problem that existing audio-visual speech separation methods are too complex and rely on future context, rendering them unsuitable for real-time applications. The key method is Swift-Net, a streaming causal architecture featuring a lightweight visual feature extractor, an efficient audio-visual fusion module, Grouped SRUs for integrating historical information, and a causal transformation template to convert non-causal models. The main result is that Swift-Net achieves outstanding performance under causal conditions on the LRS2, LRS3, and VoxCeleb2 benchmarks, demonstrating strong potential for real-time speech separation in complex environments.",
+      "latency": 44.31,
+      "usage": {
+        "prompt_tokens": 272,
+        "completion_tokens": 1096,
+        "total_tokens": 1368,
+        "completion_tokens_details": {
+          "reasoning_tokens": 976
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 272
+      }
+    }
+  },
+  {
+    "task": {
+      "id": "paper_summary_001",
+      "title": "论文创新点提炼",
+      "type": "text",
+      "prompt": "You are reviewing a paper abstract. Answer in exactly 3 sentences:\nSentence 1 — What problem does this paper solve?\nSentence 2 — What is the key method or architecture?\nSentence 3 — What is the main result or contribution?\n\nAbstract:\nAudio-visual speech separation (AVSS) aims to extract a target speech signal from a mixed signal by leveraging both auditory and visual (lip movement) cues. However, most existing AVSS methods exhibit complex architectures and rely on future context, operating offline, which renders them unsuitable for real-time applications. Inspired by the pipeline of RTFSNet, we propose a novel streaming AVSS model, named Swift-Net, which enhances the causal processing capabilities required for real-time applications. Swift-Net adopts a lightweight visual feature extraction module and an efficient fusion module for audio-visual integration. Additionally, Swift-Net employs Grouped SRUs to integrate historical information across different feature spaces, thereby improving the utilization efficiency of historical information. We further propose a causal transformation template to facilitate the conversion of non-causal AVSS models into causal counterparts. Experiments on three standard benchmark datasets (LRS2, LRS3, and VoxCeleb2) demonstrated that under causal conditions, our proposed Swift-Net exhibited outstanding performance, highlighting the potential of this method for processing speech in complex environments.",
+      "scoring_rubric": "5=三句话精准且无幻觉, 3=方向对但有遗漏, 1=严重错误或编造"
+    },
+    "model": {
+      "id": "Qwen/Qwen3-VL-8B-Instruct",
+      "label": "Qwen-VL-8B (Alibaba)"
+    },
+    "score": 4,
+    "ok": true,
+    "output": {
+      "ok": true,
+      "text": "This paper solves the problem of real-time audio-visual speech separation by addressing the limitations of existing methods that are non-causal, complex, and offline.  \nThe key method is Swift-Net, a streaming architecture that uses a lightweight visual module, efficient fusion, and Grouped SRUs for causal historical integration, along with a causal transformation template.  \nThe main contribution is Swift-Net’s superior performance under causal constraints across three benchmarks, demonstrating its effectiveness for real-time, complex-speech environments.",
+      "latency": 2.23,
+      "usage": {
+        "prompt_tokens": 276,
+        "completion_tokens": 100,
+        "total_tokens": 376
+      }
+    }
+  },
+  {
+    "task": {
+      "id": "paper_methods_002",
+      "title": "方法/算法名提取",
+      "type": "text",
+      "prompt": "Extract ALL method names, algorithm names, and model architecture component names from the abstract below. For each, write a ONE-LINE description.\n\nAbstract:\nAudio-visual speech separation (AVSS) aims to extract a target speech signal from a mixed signal by leveraging both auditory and visual (lip movement) cues. However, most existing AVSS methods exhibit complex architectures and rely on future context, operating offline, which renders them unsuitable for real-time applications. Inspired by the pipeline of RTFSNet, we propose a novel streaming AVSS model, named Swift-Net, which enhances the causal processing capabilities required for real-time applications. Swift-Net adopts a lightweight visual feature extraction module and an efficient fusion module for audio-visual integration. Additionally, Swift-Net employs Grouped SRUs to integrate historical information across different feature spaces, thereby improving the utilization efficiency of historical information. We further propose a causal transformation template to facilitate the conversion of non-causal AVSS models into causal counterparts. Experiments on three standard benchmark datasets (LRS2, LRS3, and VoxCeleb2) demonstrated that under causal conditions, our proposed Swift-Net exhibited outstanding performance, highlighting the potential of this method for processing speech in complex environments.",
+      "scoring_rubric": "5=全部提取且描述准确, 3=漏1-2个, 1=漏三个以上或描述错误"
+    },
+    "model": {
+      "id": "deepseek-ai/DeepSeek-V4-Flash",
+      "label": "DeepSeek"
+    },
+    "score": 4,
+    "ok": true,
+    "output": {
+      "ok": true,
+      "text": "- **Audio-visual speech separation (AVSS)**: A method to extract target speech from mixed audio using both auditory and visual (lip movement) cues.  \n- **RTFSNet**: A real-time speech separation network that inspired the streaming pipeline of Swift-Net.  \n- **Swift-Net**: A novel streaming AVSS model with causal processing designed for real-time applications.  \n- **Grouped SRUs**: A variant of Simple Recurrent Units that integrate historical information across different feature spaces.  \n- **Causal transformation template**: A method to convert non-causal AVSS models into causal counterparts.",
+      "latency": 10.55,
+      "usage": {
+        "prompt_tokens": 252,
+        "completion_tokens": 792,
+        "total_tokens": 1044,
+        "completion_tokens_details": {
+          "reasoning_tokens": 668
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 252
+      }
+    }
+  },
+  {
+    "task": {
+      "id": "paper_methods_002",
+      "title": "方法/算法名提取",
+      "type": "text",
+      "prompt": "Extract ALL method names, algorithm names, and model architecture component names from the abstract below. For each, write a ONE-LINE description.\n\nAbstract:\nAudio-visual speech separation (AVSS) aims to extract a target speech signal from a mixed signal by leveraging both auditory and visual (lip movement) cues. However, most existing AVSS methods exhibit complex architectures and rely on future context, operating offline, which renders them unsuitable for real-time applications. Inspired by the pipeline of RTFSNet, we propose a novel streaming AVSS model, named Swift-Net, which enhances the causal processing capabilities required for real-time applications. Swift-Net adopts a lightweight visual feature extraction module and an efficient fusion module for audio-visual integration. Additionally, Swift-Net employs Grouped SRUs to integrate historical information across different feature spaces, thereby improving the utilization efficiency of historical information. We further propose a causal transformation template to facilitate the conversion of non-causal AVSS models into causal counterparts. Experiments on three standard benchmark datasets (LRS2, LRS3, and VoxCeleb2) demonstrated that under causal conditions, our proposed Swift-Net exhibited outstanding performance, highlighting the potential of this method for processing speech in complex environments.",
+      "scoring_rubric": "5=全部提取且描述准确, 3=漏1-2个, 1=漏三个以上或描述错误"
+    },
+    "model": {
+      "id": "Qwen/Qwen2.5-72B-Instruct",
+      "label": "Qwen2.5-72B (Alibaba)"
+    },
+    "score": 4,
+    "ok": true,
+    "output": {
+      "ok": true,
+      "text": "- **RTFSNet**: A pipeline that inspired the proposed real-time streaming AVSS model.\n- **Swift-Net**: A novel streaming AVSS model designed for real-time applications.\n- **Visual Feature Extraction Module**: A lightweight component in Swift-Net for processing visual (lip movement) cues.\n- **Fusion Module**: An efficient component in Swift-Net for integrating audio and visual features.\n- **Grouped SRUs (GSRUs)**: A mechanism in Swift-Net used to integrate historical information across different feature spaces.\n- **Causal Transformation Template**: A method proposed to convert non-causal AVSS models into causal models.",
+      "latency": 4.21,
+      "usage": {
+        "prompt_tokens": 276,
+        "completion_tokens": 130,
+        "total_tokens": 406,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 276
+      }
+    }
+  },
+  {
+    "task": {
+      "id": "paper_methods_002",
+      "title": "方法/算法名提取",
+      "type": "text",
+      "prompt": "Extract ALL method names, algorithm names, and model architecture component names from the abstract below. For each, write a ONE-LINE description.\n\nAbstract:\nAudio-visual speech separation (AVSS) aims to extract a target speech signal from a mixed signal by leveraging both auditory and visual (lip movement) cues. However, most existing AVSS methods exhibit complex architectures and rely on future context, operating offline, which renders them unsuitable for real-time applications. Inspired by the pipeline of RTFSNet, we propose a novel streaming AVSS model, named Swift-Net, which enhances the causal processing capabilities required for real-time applications. Swift-Net adopts a lightweight visual feature extraction module and an efficient fusion module for audio-visual integration. Additionally, Swift-Net employs Grouped SRUs to integrate historical information across different feature spaces, thereby improving the utilization efficiency of historical information. We further propose a causal transformation template to facilitate the conversion of non-causal AVSS models into causal counterparts. Experiments on three standard benchmark datasets (LRS2, LRS3, and VoxCeleb2) demonstrated that under causal conditions, our proposed Swift-Net exhibited outstanding performance, highlighting the potential of this method for processing speech in complex environments.",
+      "scoring_rubric": "5=全部提取且描述准确, 3=漏1-2个, 1=漏三个以上或描述错误"
+    },
+    "model": {
+      "id": "zai-org/GLM-5.2",
+      "label": "GLM-5.2 (Zhipu)"
+    },
+    "score": 4,
+    "ok": true,
+    "output": {
+      "ok": true,
+      "text": "Here are the extracted method names, algorithm names, and model architecture component names from the abstract, each with a one-line description:\n\n*   **Audio-visual speech separation (AVSS)**: A method that extracts a target speech signal from a mixed signal by leveraging both auditory and visual cues.\n*   **RTFSNet**: An existing method pipeline that inspired the proposed streaming AVSS model.\n*   **Swift-Net**: A novel, lightweight streaming audio-visual speech separation model designed for real-time causal processing.\n*   **Lightweight visual feature extraction module**: A model architecture component in Swift-Net used to efficiently process visual (lip movement) cues.\n*   **Efficient fusion module**: A model architecture component in Swift-Net responsible for integrating audio and visual information.\n*   **Grouped SRUs**: Architecture components employed by Swift-Net to integrate historical information across different feature spaces.\n*   **Causal transformation template**: A proposed algorithmic template designed to facilitate the conversion of non-causal AVSS models into causal counterparts.",
+      "latency": 23.28,
+      "usage": {
+        "prompt_tokens": 259,
+        "completion_tokens": 962,
+        "total_tokens": 1221,
+        "completion_tokens_details": {
+          "reasoning_tokens": 752
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 259
+      }
+    }
+  },
+  {
+    "task": {
+      "id": "paper_methods_002",
+      "title": "方法/算法名提取",
+      "type": "text",
+      "prompt": "Extract ALL method names, algorithm names, and model architecture component names from the abstract below. For each, write a ONE-LINE description.\n\nAbstract:\nAudio-visual speech separation (AVSS) aims to extract a target speech signal from a mixed signal by leveraging both auditory and visual (lip movement) cues. However, most existing AVSS methods exhibit complex architectures and rely on future context, operating offline, which renders them unsuitable for real-time applications. Inspired by the pipeline of RTFSNet, we propose a novel streaming AVSS model, named Swift-Net, which enhances the causal processing capabilities required for real-time applications. Swift-Net adopts a lightweight visual feature extraction module and an efficient fusion module for audio-visual integration. Additionally, Swift-Net employs Grouped SRUs to integrate historical information across different feature spaces, thereby improving the utilization efficiency of historical information. We further propose a causal transformation template to facilitate the conversion of non-causal AVSS models into causal counterparts. Experiments on three standard benchmark datasets (LRS2, LRS3, and VoxCeleb2) demonstrated that under causal conditions, our proposed Swift-Net exhibited outstanding performance, highlighting the potential of this method for processing speech in complex environments.",
+      "scoring_rubric": "5=全部提取且描述准确, 3=漏1-2个, 1=漏三个以上或描述错误"
+    },
+    "model": {
+      "id": "Pro/moonshotai/Kimi-K2.6",
+      "label": "Kimi-K2.6 (Moonshot)"
+    },
+    "score": 4,
+    "ok": true,
+    "output": {
+      "ok": true,
+      "text": "- **Audio-visual speech separation (AVSS)**: A method that extracts a target speech signal from a mixed signal by leveraging both auditory and visual (lip movement) cues.\n- **RTFSNet**: An existing model pipeline that inspired the architectural design of the proposed streaming approach.\n- **Swift-Net**: A novel streaming AVSS model designed to enhance causal processing capabilities for real-time applications.\n- **lightweight visual feature extraction module**: A Swift-Net architecture component that extracts visual features with minimal computational overhead.\n- **efficient fusion module**: A Swift-Net architecture component that integrates audio and visual features together efficiently.\n- **Grouped SRUs**: A recurrent architecture component used in Swift-Net to integrate historical information across different feature spaces.\n- **causal transformation template**: A proposed method to convert non-causal AVSS models into causal counterparts suitable for streaming.",
+      "latency": 59.49,
+      "usage": {
+        "prompt_tokens": 251,
+        "completion_tokens": 1725,
+        "total_tokens": 1976,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1555
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 251
+      }
+    }
+  },
+  {
+    "task": {
+      "id": "paper_methods_002",
+      "title": "方法/算法名提取",
+      "type": "text",
+      "prompt": "Extract ALL method names, algorithm names, and model architecture component names from the abstract below. For each, write a ONE-LINE description.\n\nAbstract:\nAudio-visual speech separation (AVSS) aims to extract a target speech signal from a mixed signal by leveraging both auditory and visual (lip movement) cues. However, most existing AVSS methods exhibit complex architectures and rely on future context, operating offline, which renders them unsuitable for real-time applications. Inspired by the pipeline of RTFSNet, we propose a novel streaming AVSS model, named Swift-Net, which enhances the causal processing capabilities required for real-time applications. Swift-Net adopts a lightweight visual feature extraction module and an efficient fusion module for audio-visual integration. Additionally, Swift-Net employs Grouped SRUs to integrate historical information across different feature spaces, thereby improving the utilization efficiency of historical information. We further propose a causal transformation template to facilitate the conversion of non-causal AVSS models into causal counterparts. Experiments on three standard benchmark datasets (LRS2, LRS3, and VoxCeleb2) demonstrated that under causal conditions, our proposed Swift-Net exhibited outstanding performance, highlighting the potential of this method for processing speech in complex environments.",
+      "scoring_rubric": "5=全部提取且描述准确, 3=漏1-2个, 1=漏三个以上或描述错误"
+    },
+    "model": {
+      "id": "Qwen/Qwen3-VL-8B-Instruct",
+      "label": "Qwen-VL-8B (Alibaba)"
+    },
+    "score": 4,
+    "ok": true,
+    "output": {
+      "ok": true,
+      "text": "- **Method name: Swift-Net** — A novel streaming audio-visual speech separation model designed for real-time applications with causal processing capabilities.  \n- **Algorithm name: Grouped SRUs** — A mechanism to integrate historical information across different feature spaces for improved temporal modeling in causal AVSS.  \n- **Algorithm name: Causal transformation template** — A technique to convert non-causal AVSS models into causal counterparts for real-time deployment.  \n- **Model architecture component: Lightweight visual feature extraction module** — A compact module for extracting visual (lip movement) cues efficiently in Swift-Net.  \n- **Model architecture component: Efficient fusion module** — A component for integrating audio and visual features in a computationally optimized manner.",
+      "latency": 3.25,
+      "usage": {
+        "prompt_tokens": 255,
+        "completion_tokens": 148,
+        "total_tokens": 403
+      }
+    }
+  },
+  {
+    "task": {
+      "id": "paper_translate_003",
+      "title": "中文翻译·术语保真",
+      "type": "text",
+      "prompt": "Translate the following paper abstract into Chinese.\nCRITICAL RULES:\n- Keep ALL technical terms in their original English form (method names, metrics, framework names, model names). Do NOT translate them.\n- Only translate the surrounding explanatory/narrative text.\n- Preserve the original structure and meaning.\n\nAbstract:\nAudio-visual speech separation (AVSS) aims to extract a target speech signal from a mixed signal by leveraging both auditory and visual (lip movement) cues. However, most existing AVSS methods exhibit complex architectures and rely on future context, operating offline, which renders them unsuitable for real-time applications. Inspired by the pipeline of RTFSNet, we propose a novel streaming AVSS model, named Swift-Net, which enhances the causal processing capabilities required for real-time applications. Swift-Net adopts a lightweight visual feature extraction module and an efficient fusion module for audio-visual integration. Additionally, Swift-Net employs Grouped SRUs to integrate historical information across different feature spaces, thereby improving the utilization efficiency of historical information. We further propose a causal transformation template to facilitate the conversion of non-causal AVSS models into causal counterparts. Experiments on three standard benchmark datasets (LRS2, LRS3, and VoxCeleb2) demonstrated that under causal conditions, our proposed Swift-Net exhibited outstanding performance, highlighting the potential of this method for processing speech in complex environments.",
+      "scoring_rubric": "5=术语全部保留英文且翻译通顺, 3=少数术语被翻但可读, 1=术语全被翻或不通顺"
+    },
+    "model": {
+      "id": "deepseek-ai/DeepSeek-V4-Flash",
+      "label": "DeepSeek"
+    },
+    "score": 5,
+    "ok": true,
+    "output": {
+      "ok": true,
+      "text": "音频-视觉语音分离（AVSS）旨在通过利用听觉和视觉（唇部运动）线索，从混合信号中提取目标语音信号。然而，现有大多数AVSS方法架构复杂且依赖未来上下文信息，以离线方式运行，因此不适用于实时应用。受RTFSNet流水线的启发，我们提出了一种新颖的流式AVSS模型，命名为Swift-Net，该模型增强了实时应用所需的因果处理能力。Swift-Net采用轻量级视觉特征提取模块和高效的音频-视觉融合模块。此外，Swift-Net利用Grouped SRUs在不同特征空间中整合历史信息，从而提升历史信息的利用效率。我们进一步提出了一种因果转换模板，以促进非因果AVSS模型向因果模型的转换。在三个标准基准数据集（LRS2、LRS3和VoxCeleb2）上的实验表明，在因果条件下，我们提出的Swift-Net展现出卓越的性能，凸显了该方法在复杂环境中处理语音的潜力。",
+      "latency": 15.42,
+      "usage": {
+        "prompt_tokens": 283,
+        "completion_tokens": 203,
+        "total_tokens": 486,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 283
+      }
+    }
+  },
+  {
+    "task": {
+      "id": "paper_translate_003",
+      "title": "中文翻译·术语保真",
+      "type": "text",
+      "prompt": "Translate the following paper abstract into Chinese.\nCRITICAL RULES:\n- Keep ALL technical terms in their original English form (method names, metrics, framework names, model names). Do NOT translate them.\n- Only translate the surrounding explanatory/narrative text.\n- Preserve the original structure and meaning.\n\nAbstract:\nAudio-visual speech separation (AVSS) aims to extract a target speech signal from a mixed signal by leveraging both auditory and visual (lip movement) cues. However, most existing AVSS methods exhibit complex architectures and rely on future context, operating offline, which renders them unsuitable for real-time applications. Inspired by the pipeline of RTFSNet, we propose a novel streaming AVSS model, named Swift-Net, which enhances the causal processing capabilities required for real-time applications. Swift-Net adopts a lightweight visual feature extraction module and an efficient fusion module for audio-visual integration. Additionally, Swift-Net employs Grouped SRUs to integrate historical information across different feature spaces, thereby improving the utilization efficiency of historical information. We further propose a causal transformation template to facilitate the conversion of non-causal AVSS models into causal counterparts. Experiments on three standard benchmark datasets (LRS2, LRS3, and VoxCeleb2) demonstrated that under causal conditions, our proposed Swift-Net exhibited outstanding performance, highlighting the potential of this method for processing speech in complex environments.",
+      "scoring_rubric": "5=术语全部保留英文且翻译通顺, 3=少数术语被翻但可读, 1=术语全被翻或不通顺"
+    },
+    "model": {
+      "id": "Qwen/Qwen2.5-72B-Instruct",
+      "label": "Qwen2.5-72B (Alibaba)"
+    },
+    "score": 5,
+    "ok": true,
+    "output": {
+      "ok": true,
+      "text": "摘要：\n音频-视觉语音分离 (AVSS) 旨在通过利用听觉和视觉（唇部运动）线索从混合信号中提取目标语音信号。然而，大多数现有的 AVSS 方法具有复杂的架构，并依赖于未来的上下文，以离线方式运行，这使得它们不适合实时应用。受 RTFSNet 流水线的启发，我们提出了一种新的流式 AVSS 模型，命名为 Swift-Net，该模型增强了实时应用所需的因果处理能力。Swift-Net 采用了一个轻量级的视觉特征提取模块和一个高效的融合模块，用于音频-视觉集成。此外，Swift-Net 还使用了 Grouped SRUs 来在不同的特征空间中整合历史信息，从而提高历史信息的利用效率。我们进一步提出了一种因果变换模板，以促进非因果 AVSS 模型向因果模型的转换。在三个标准基准数据集 (LRS2, LRS3, 和 VoxCeleb2) 上的实验表明，在因果条件下，我们提出的 Swift-Net 展现了卓越的性能，突显了该方法在复杂环境中处理语音的潜力。",
+      "latency": 7.96,
+      "usage": {
+        "prompt_tokens": 307,
+        "completion_tokens": 240,
+        "total_tokens": 547,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 307
+      }
+    }
+  },
+  {
+    "task": {
+      "id": "paper_translate_003",
+      "title": "中文翻译·术语保真",
+      "type": "text",
+      "prompt": "Translate the following paper abstract into Chinese.\nCRITICAL RULES:\n- Keep ALL technical terms in their original English form (method names, metrics, framework names, model names). Do NOT translate them.\n- Only translate the surrounding explanatory/narrative text.\n- Preserve the original structure and meaning.\n\nAbstract:\nAudio-visual speech separation (AVSS) aims to extract a target speech signal from a mixed signal by leveraging both auditory and visual (lip movement) cues. However, most existing AVSS methods exhibit complex architectures and rely on future context, operating offline, which renders them unsuitable for real-time applications. Inspired by the pipeline of RTFSNet, we propose a novel streaming AVSS model, named Swift-Net, which enhances the causal processing capabilities required for real-time applications. Swift-Net adopts a lightweight visual feature extraction module and an efficient fusion module for audio-visual integration. Additionally, Swift-Net employs Grouped SRUs to integrate historical information across different feature spaces, thereby improving the utilization efficiency of historical information. We further propose a causal transformation template to facilitate the conversion of non-causal AVSS models into causal counterparts. Experiments on three standard benchmark datasets (LRS2, LRS3, and VoxCeleb2) demonstrated that under causal conditions, our proposed Swift-Net exhibited outstanding performance, highlighting the potential of this method for processing speech in complex environments.",
+      "scoring_rubric": "5=术语全部保留英文且翻译通顺, 3=少数术语被翻但可读, 1=术语全被翻或不通顺"
+    },
+    "model": {
+      "id": "zai-org/GLM-5.2",
+      "label": "GLM-5.2 (Zhipu)"
+    },
+    "score": 5,
+    "ok": true,
+    "output": {
+      "ok": true,
+      "text": "Audio-visual speech separation (AVSS) 旨在通过利用听觉和视觉（唇部运动）线索，从混合信号中提取目标语音信号。然而，现有的大多数 AVSS 方法架构复杂，且依赖于未来上下文进行离线操作，这使得它们不适用于实时应用。受 RTFSNet 流程的启发，我们提出了一种名为 Swift-Net 的新型流式 AVSS 模型，该模型增强了实时应用所需的因果处理能力。Swift-Net 采用了一个轻量级的视觉特征提取模块和一个高效的融合模块来实现视听整合。此外，Swift-Net 采用 Grouped SRUs 来整合不同特征空间中的历史信息，从而提高了历史信息的利用效率。我们进一步提出了一种因果转换模板，以促进将非因果 AVSS 模型转换为因果模型。在三个标准基准数据集（LRS2、LRS3 和 VoxCeleb2）上的实验表明，在因果条件下，我们提出的 Swift-Net 表现出了卓越的性能，突显了该方法在复杂环境中处理语音的潜力。",
+      "latency": 40.93,
+      "usage": {
+        "prompt_tokens": 290,
+        "completion_tokens": 1922,
+        "total_tokens": 2212,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1707
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 290
+      }
+    }
+  },
+  {
+    "task": {
+      "id": "paper_translate_003",
+      "title": "中文翻译·术语保真",
+      "type": "text",
+      "prompt": "Translate the following paper abstract into Chinese.\nCRITICAL RULES:\n- Keep ALL technical terms in their original English form (method names, metrics, framework names, model names). Do NOT translate them.\n- Only translate the surrounding explanatory/narrative text.\n- Preserve the original structure and meaning.\n\nAbstract:\nAudio-visual speech separation (AVSS) aims to extract a target speech signal from a mixed signal by leveraging both auditory and visual (lip movement) cues. However, most existing AVSS methods exhibit complex architectures and rely on future context, operating offline, which renders them unsuitable for real-time applications. Inspired by the pipeline of RTFSNet, we propose a novel streaming AVSS model, named Swift-Net, which enhances the causal processing capabilities required for real-time applications. Swift-Net adopts a lightweight visual feature extraction module and an efficient fusion module for audio-visual integration. Additionally, Swift-Net employs Grouped SRUs to integrate historical information across different feature spaces, thereby improving the utilization efficiency of historical information. We further propose a causal transformation template to facilitate the conversion of non-causal AVSS models into causal counterparts. Experiments on three standard benchmark datasets (LRS2, LRS3, and VoxCeleb2) demonstrated that under causal conditions, our proposed Swift-Net exhibited outstanding performance, highlighting the potential of this method for processing speech in complex environments.",
+      "scoring_rubric": "5=术语全部保留英文且翻译通顺, 3=少数术语被翻但可读, 1=术语全被翻或不通顺"
+    },
+    "model": {
+      "id": "Pro/moonshotai/Kimi-K2.6",
+      "label": "Kimi-K2.6 (Moonshot)"
+    },
+    "score": 5,
+    "ok": true,
+    "output": {
+      "ok": true,
+      "text": "Audio-visual speech separation (AVSS) 旨在通过听觉与视觉（唇部运动）线索，从混合信号中提取目标语音信号。然而，大多数现有的 AVSS 方法架构复杂，且依赖未来上下文进行离线处理，这使其不适用于实时应用。受 RTFSNet 的启发，我们提出了一种新型的流式 AVSS 模型 Swift-Net，以增强实时应用所需的因果处理能力。Swift-Net 采用轻量级的视觉特征提取模块和高效的融合模块来实现视听融合。此外，Swift-Net 使用 Grouped SRU 来整合不同特征空间中的历史信息，从而提高历史信息的利用效率。我们进一步提出了一种 causal transformation template，以促进非因果 AVSS 模型向其因果对应模型的转换。在三个标准基准数据集（LRS2、LRS3 和 VoxCeleb2）上的实验表明，在因果条件下，我们提出的 Swift-Net 表现出卓越的性能，凸显了该方法在复杂环境中处理语音的潜力。",
+      "latency": 141.29,
+      "usage": {
+        "prompt_tokens": 282,
+        "completion_tokens": 4449,
+        "total_tokens": 4731,
+        "completion_tokens_details": {
+          "reasoning_tokens": 4252
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 282
+      }
+    }
+  },
+  {
+    "task": {
+      "id": "paper_translate_003",
+      "title": "中文翻译·术语保真",
+      "type": "text",
+      "prompt": "Translate the following paper abstract into Chinese.\nCRITICAL RULES:\n- Keep ALL technical terms in their original English form (method names, metrics, framework names, model names). Do NOT translate them.\n- Only translate the surrounding explanatory/narrative text.\n- Preserve the original structure and meaning.\n\nAbstract:\nAudio-visual speech separation (AVSS) aims to extract a target speech signal from a mixed signal by leveraging both auditory and visual (lip movement) cues. However, most existing AVSS methods exhibit complex architectures and rely on future context, operating offline, which renders them unsuitable for real-time applications. Inspired by the pipeline of RTFSNet, we propose a novel streaming AVSS model, named Swift-Net, which enhances the causal processing capabilities required for real-time applications. Swift-Net adopts a lightweight visual feature extraction module and an efficient fusion module for audio-visual integration. Additionally, Swift-Net employs Grouped SRUs to integrate historical information across different feature spaces, thereby improving the utilization efficiency of historical information. We further propose a causal transformation template to facilitate the conversion of non-causal AVSS models into causal counterparts. Experiments on three standard benchmark datasets (LRS2, LRS3, and VoxCeleb2) demonstrated that under causal conditions, our proposed Swift-Net exhibited outstanding performance, highlighting the potential of this method for processing speech in complex environments.",
+      "scoring_rubric": "5=术语全部保留英文且翻译通顺, 3=少数术语被翻但可读, 1=术语全被翻或不通顺"
+    },
+    "model": {
+      "id": "Qwen/Qwen3-VL-8B-Instruct",
+      "label": "Qwen-VL-8B (Alibaba)"
+    },
+    "score": 5,
+    "ok": true,
+    "output": {
+      "ok": true,
+      "text": "摘要：\n音频-视觉语音分离（AVSS）旨在通过利用听觉和视觉（唇部运动）线索，从混合信号中提取目标语音信号。然而，大多数现有的AVSS方法具有复杂的架构，并依赖未来上下文，仅适用于离线操作，因此不适合实时应用。受RTFSNet架构的启发，我们提出了一种新颖的流式AVSS模型，名为Swift-Net，该模型增强了实时应用所需的时间因果处理能力。Swift-Net采用轻量级视觉特征提取模块和高效的音频-视觉融合模块。此外，Swift-Net采用分组SRU模块，在不同特征空间中整合历史信息，从而提高历史信息的利用效率。我们进一步提出了一种因果变换模板，以促进非因果AVSS模型向因果模型的转换。在三个标准基准数据集（LRS2、LRS3和VoxCeleb2）上的实验表明，在因果条件下，我们提出的Swift-Net表现出卓越的性能，突显了该方法在复杂环境下处理语音的潜力。",
+      "latency": 1.95,
+      "usage": {
+        "prompt_tokens": 286,
+        "completion_tokens": 217,
+        "total_tokens": 503
+      }
+    }
+  },
+  {
+    "task": {
+      "id": "paper_scenario_004",
+      "title": "场景适配判断",
+      "type": "text",
+      "prompt": "Based on the abstract below, answer these questions:\n1. Could this method be deployed on a mobile device for real-time use? Why or why not? Cite specific evidence from the abstract.\n2. What datasets were used? Are they publicly available?\n3. Would this method work for a different domain than the one studied? Explain your reasoning.\n\nAbstract:\nAudio-visual speech separation (AVSS) aims to extract a target speech signal from a mixed signal by leveraging both auditory and visual (lip movement) cues. However, most existing AVSS methods exhibit complex architectures and rely on future context, operating offline, which renders them unsuitable for real-time applications. Inspired by the pipeline of RTFSNet, we propose a novel streaming AVSS model, named Swift-Net, which enhances the causal processing capabilities required for real-time applications. Swift-Net adopts a lightweight visual feature extraction module and an efficient fusion module for audio-visual integration. Additionally, Swift-Net employs Grouped SRUs to integrate historical information across different feature spaces, thereby improving the utilization efficiency of historical information. We further propose a causal transformation template to facilitate the conversion of non-causal AVSS models into causal counterparts. Experiments on three standard benchmark datasets (LRS2, LRS3, and VoxCeleb2) demonstrated that under causal conditions, our proposed Swift-Net exhibited outstanding performance, highlighting the potential of this method for processing speech in complex environments.",
+      "scoring_rubric": "5=三个问题引用原文且推理正确, 3=两个对, 1=一个或全部错误"
+    },
+    "model": {
+      "id": "deepseek-ai/DeepSeek-V4-Flash",
+      "label": "DeepSeek"
+    },
+    "score": 5,
+    "ok": true,
+    "output": {
+      "ok": true,
+      "text": "Based on the abstract provided, here are the answers to your questions:\n\n### 1. Could this method be deployed on a mobile device for real-time use? Why or why not? Cite specific evidence from the abstract.\n\n**Yes**, the method is designed for real-time use and its lightweight components suggest it could be deployed on a mobile device.  \n**Evidence from the abstract:**  \n- Swift-Net is described as a “streaming AVSS model” that “enhances the causal processing capabilities required for real-time applications.”  \n- It uses a “lightweight visual feature extraction module” and an “efficient fusion module,” indicating low computational overhead.  \n- The model operates causally (no future context), which is essential for real-time streaming.  \n\nWhile the abstract does not explicitly test mobile deployment, the combination of causal, streaming design and lightweight modules makes it plausible for mobile real-time use.\n\n### 2. What datasets were used? Are they publicly available?\n\nThe datasets used are **LRS2, LRS3, and VoxCeleb2**.  \nAll three are standard benchmark datasets and are **publicly available** for research purposes.\n\n### 3. Would this method work for a different domain than the one studied? Explain your reasoning.\n\n**Not directly**, but the framework could be adapted.  \n**Reasoning:**  \n- The method is specifically designed for **audio-visual speech separation**, relying on **lip movement cues** as the visual input.  \n- The visual feature extraction module is likely trained on human lip appearances and movements, so it would not generalize to a different domain (e.g., separating musical instruments with video of hands, or animal sounds with video of animal mouths) without retraining or replacing the visual module.  \n- However, the core architecture—causal processing, efficient fusion, and Grouped SRUs for temporal integration—is domain-agnostic and could be repurposed for other audio-visual separation tasks if appropriate visual features are provided.",
+      "latency": 15.18,
+      "usage": {
+        "prompt_tokens": 292,
+        "completion_tokens": 1092,
+        "total_tokens": 1384,
+        "completion_tokens_details": {
+          "reasoning_tokens": 689
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 292
+      }
+    }
+  },
+  {
+    "task": {
+      "id": "paper_scenario_004",
+      "title": "场景适配判断",
+      "type": "text",
+      "prompt": "Based on the abstract below, answer these questions:\n1. Could this method be deployed on a mobile device for real-time use? Why or why not? Cite specific evidence from the abstract.\n2. What datasets were used? Are they publicly available?\n3. Would this method work for a different domain than the one studied? Explain your reasoning.\n\nAbstract:\nAudio-visual speech separation (AVSS) aims to extract a target speech signal from a mixed signal by leveraging both auditory and visual (lip movement) cues. However, most existing AVSS methods exhibit complex architectures and rely on future context, operating offline, which renders them unsuitable for real-time applications. Inspired by the pipeline of RTFSNet, we propose a novel streaming AVSS model, named Swift-Net, which enhances the causal processing capabilities required for real-time applications. Swift-Net adopts a lightweight visual feature extraction module and an efficient fusion module for audio-visual integration. Additionally, Swift-Net employs Grouped SRUs to integrate historical information across different feature spaces, thereby improving the utilization efficiency of historical information. We further propose a causal transformation template to facilitate the conversion of non-causal AVSS models into causal counterparts. Experiments on three standard benchmark datasets (LRS2, LRS3, and VoxCeleb2) demonstrated that under causal conditions, our proposed Swift-Net exhibited outstanding performance, highlighting the potential of this method for processing speech in complex environments.",
+      "scoring_rubric": "5=三个问题引用原文且推理正确, 3=两个对, 1=一个或全部错误"
+    },
+    "model": {
+      "id": "Qwen/Qwen2.5-72B-Instruct",
+      "label": "Qwen2.5-72B (Alibaba)"
+    },
+    "score": 5,
+    "ok": true,
+    "output": {
+      "ok": true,
+      "text": "1. **Could this method be deployed on a mobile device for real-time use? Why or why not? Cite specific evidence from the abstract.**\n\n   Yes, the method described in the abstract, Swift-Net, could be deployed on a mobile device for real-time use. The abstract explicitly states that Swift-Net is designed to enhance \"causal processing capabilities required for real-time applications\" and that it \"adopts a lightweight visual feature extraction module and an efficient fusion module for audio-visual integration.\" These design choices suggest that the model is optimized for real-time performance, which is crucial for mobile devices with limited computational resources. Furthermore, the use of Grouped SRUs (Simplified Recurrent Units) to integrate historical information efficiently indicates that the model is capable of handling streaming data, another key requirement for real-time applications.\n\n2. **What datasets were used? Are they publicly available?**\n\n   The datasets used in the experiments are LRS2, LRS3, and VoxCeleb2. These are standard benchmark datasets in the field of audio-visual speech processing. LRS2 (Lip Reading Sentences 2) and LRS3 (Lip Reading Sentences 3) are publicly available datasets that contain video clips of people speaking, often used for lip-reading and audio-visual speech recognition tasks. VoxCeleb2 is also a publicly available dataset, which consists of video clips of celebrities speaking, commonly used for speaker recognition and audio-visual speech separation tasks. These datasets are widely used in research and are accessible to the public, making it easier for other researchers to replicate and build upon the results.\n\n3. **Would this method work for a different domain than the one studied? Explain your reasoning.**\n\n   The method proposed in the abstract, Swift-Net, is designed to process speech in complex environments and is based on the integration of auditory and visual cues. While the experiments were conducted on audio-visual speech separation, the principles underlying the model—such as the efficient use of historical information and the lightweight design—could potentially be applicable to other domains that require real-time processing and the integration of multiple sensory inputs. For example, it might be useful in real-time video conferencing, where separating individual speakers from a mixed audio signal is crucial, or in augmented reality applications where visual and auditory cues need to be processed simultaneously. However, the effectiveness in these domains would depend on the specific characteristics of the data and the tasks involved. The abstract does not provide direct evidence of the model's performance in other domains, but the general design and the causal processing capabilities suggest that it has the potential to be adapted for similar real-time, multi-modal tasks.",
+      "latency": 16.49,
+      "usage": {
+        "prompt_tokens": 318,
+        "completion_tokens": 541,
+        "total_tokens": 859,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 318
+      }
+    }
+  },
+  {
+    "task": {
+      "id": "paper_scenario_004",
+      "title": "场景适配判断",
+      "type": "text",
+      "prompt": "Based on the abstract below, answer these questions:\n1. Could this method be deployed on a mobile device for real-time use? Why or why not? Cite specific evidence from the abstract.\n2. What datasets were used? Are they publicly available?\n3. Would this method work for a different domain than the one studied? Explain your reasoning.\n\nAbstract:\nAudio-visual speech separation (AVSS) aims to extract a target speech signal from a mixed signal by leveraging both auditory and visual (lip movement) cues. However, most existing AVSS methods exhibit complex architectures and rely on future context, operating offline, which renders them unsuitable for real-time applications. Inspired by the pipeline of RTFSNet, we propose a novel streaming AVSS model, named Swift-Net, which enhances the causal processing capabilities required for real-time applications. Swift-Net adopts a lightweight visual feature extraction module and an efficient fusion module for audio-visual integration. Additionally, Swift-Net employs Grouped SRUs to integrate historical information across different feature spaces, thereby improving the utilization efficiency of historical information. We further propose a causal transformation template to facilitate the conversion of non-causal AVSS models into causal counterparts. Experiments on three standard benchmark datasets (LRS2, LRS3, and VoxCeleb2) demonstrated that under causal conditions, our proposed Swift-Net exhibited outstanding performance, highlighting the potential of this method for processing speech in complex environments.",
+      "scoring_rubric": "5=三个问题引用原文且推理正确, 3=两个对, 1=一个或全部错误"
+    },
+    "model": {
+      "id": "zai-org/GLM-5.2",
+      "label": "GLM-5.2 (Zhipu)"
+    },
+    "score": 5,
+    "ok": true,
+    "output": {
+      "ok": true,
+      "text": "Based on the abstract provided, here are the answers to your questions:\n\n**1. Could this method be deployed on a mobile device for real-time use? Why or why not? Cite specific evidence from the abstract.**\nYes, this method is highly suitable for real-time use and would be a strong candidate for mobile deployment. The abstract explicitly states that Swift-Net is a \"novel streaming AVSS model, which enhances the causal processing capabilities required for real-time applications.\" Unlike previous methods that \"rely on future context, operating offline,\" Swift-Net processes data causally (meaning it only uses past and present data, not future data). Furthermore, the abstract notes that Swift-Net \"adopts a lightweight visual feature extraction module and an efficient fusion module,\" which directly implies a reduced computational overhead necessary for deployment on resource-constrained devices like mobile phones. *(Note: While the abstract explicitly confirms real-time capability and a lightweight architecture, it does not specifically mention mobile hardware, though the design choices strongly point toward mobile viability).*\n\n**2. What datasets were used? Are they publicly available?**\nThe experiments used three datasets: **LRS2, LRS3, and VoxCeleb2**. The abstract refers to them as \"standard benchmark datasets.\" While the abstract does not explicitly state whether they are publicly available, describing them as \"standard benchmark\" datasets strongly implies they are widely accessible to the research community. *(Outside knowledge confirms that LRS2, LRS3, and VoxCeleb2 are indeed well-known, publicly available datasets commonly used in audio-visual speech recognition and separation research).*\n\n**3. Would this method work for a different domain than the one studied? Explain your reasoning.**\nIt would depend on the nature of the new domain, but generally, it would require modification. \n*   **Reasoning:** The method is fundamentally based on \"Audio-visual speech separation (AVSS)\" which relies specifically on \"visual (lip movement) cues\" to extract a target speech signal. If the new domain still involves human speech and has access to video of the speaker's face (e.g., video conferencing or multi-speaker broadcasting), the method would likely work very well. \n*   However, if the new domain lacks a visual component that correlates directly with the audio (e.g., separating overlapping instrumental music, ambient nature sounds, or radio signals), this method would not work out-of-the-box. The architecture's fusion module is specifically designed to integrate audio with lip movements. Additionally, because the model was trained and evaluated exclusively on human speech datasets (LRS2, LRS3, VoxCeleb2), transferring it to a completely different domain would require collecting new aligned audio-visual data and retraining the model to recognize the domain-specific visual cues.",
+      "latency": 43.28,
+      "usage": {
+        "prompt_tokens": 301,
+        "completion_tokens": 2130,
+        "total_tokens": 2431,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1564
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 301
+      }
+    }
+  },
+  {
+    "task": {
+      "id": "paper_scenario_004",
+      "title": "场景适配判断",
+      "type": "text",
+      "prompt": "Based on the abstract below, answer these questions:\n1. Could this method be deployed on a mobile device for real-time use? Why or why not? Cite specific evidence from the abstract.\n2. What datasets were used? Are they publicly available?\n3. Would this method work for a different domain than the one studied? Explain your reasoning.\n\nAbstract:\nAudio-visual speech separation (AVSS) aims to extract a target speech signal from a mixed signal by leveraging both auditory and visual (lip movement) cues. However, most existing AVSS methods exhibit complex architectures and rely on future context, operating offline, which renders them unsuitable for real-time applications. Inspired by the pipeline of RTFSNet, we propose a novel streaming AVSS model, named Swift-Net, which enhances the causal processing capabilities required for real-time applications. Swift-Net adopts a lightweight visual feature extraction module and an efficient fusion module for audio-visual integration. Additionally, Swift-Net employs Grouped SRUs to integrate historical information across different feature spaces, thereby improving the utilization efficiency of historical information. We further propose a causal transformation template to facilitate the conversion of non-causal AVSS models into causal counterparts. Experiments on three standard benchmark datasets (LRS2, LRS3, and VoxCeleb2) demonstrated that under causal conditions, our proposed Swift-Net exhibited outstanding performance, highlighting the potential of this method for processing speech in complex environments.",
+      "scoring_rubric": "5=三个问题引用原文且推理正确, 3=两个对, 1=一个或全部错误"
+    },
+    "model": {
+      "id": "Pro/moonshotai/Kimi-K2.6",
+      "label": "Kimi-K2.6 (Moonshot)"
+    },
+    "score": 5,
+    "ok": true,
+    "output": {
+      "ok": true,
+      "text": "Here are the answers based on the abstract:\n\n**1. Could this method be deployed on a mobile device for real-time use? Why or why not? Cite specific evidence from the abstract.**\n\n**Likely yes, or at least it is explicitly designed with the necessary architectural properties for real-time deployment**, though the abstract does not confirm actual mobile hardware tests. The evidence from the abstract is that Swift-Net is described as a **\"streaming AVSS model\"** that enhances **\"causal processing capabilities required for real-time applications.\"** Unlike offline methods that **\"rely on future context,\"** Swift-Net operates causally. Furthermore, the authors specifically note that it adopts a **\"lightweight visual feature extraction module\"** and an **\"efficient fusion module\"** for audio-visual integration. These design choices—streaming, causal, lightweight, and efficient—are consistent with the constraints of mobile and edge devices. However, the abstract does not provide specific mobile metrics (e.g., model size, on-device latency, or battery consumption), so one can infer suitability but cannot confirm deployment feasibility from the abstract alone.\n\n**2. What datasets were used? Are they publicly available?**\n\nThe datasets used were **LRS2, LRS3, and VoxCeleb2**. The abstract refers to them as **\"three standard benchmark datasets.\"** While the abstract does not explicitly state that they are publicly available, describing them as **\"standard benchmark datasets\"** strongly implies they are publicly recognized and accessible benchmarks commonly used in the research community. (Indeed, these are well-known public datasets in audio-visual speech processing.)\n\n**3. Would this method work for a different domain than the one studied? Explain your reasoning.**\n\n**It would likely not work for domains that lack visual lip cues or do not involve human speech.** The abstract explicitly states that the method **\"leverages both auditory and visual (lip movement) cues\"** to extract target speech. Therefore, its success is tied to the presence of a visible speaker’s face. It would be unsuitable for audio-only source separation (e.g., separating musical instruments) or scenarios where the speaker is off-camera. It might generalize to other *speech-related* domains where lip movements are available (e.g., different languages, new noise environments, or other \"complex environments\" mentioned in the abstract), but the abstract provides no evidence that the model is effective for non-speech audio or non-visual domains.",
+      "latency": 70.23,
+      "usage": {
+        "prompt_tokens": 293,
+        "completion_tokens": 2117,
+        "total_tokens": 2410,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1619
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 293
+      }
+    }
+  },
+  {
+    "task": {
+      "id": "paper_scenario_004",
+      "title": "场景适配判断",
+      "type": "text",
+      "prompt": "Based on the abstract below, answer these questions:\n1. Could this method be deployed on a mobile device for real-time use? Why or why not? Cite specific evidence from the abstract.\n2. What datasets were used? Are they publicly available?\n3. Would this method work for a different domain than the one studied? Explain your reasoning.\n\nAbstract:\nAudio-visual speech separation (AVSS) aims to extract a target speech signal from a mixed signal by leveraging both auditory and visual (lip movement) cues. However, most existing AVSS methods exhibit complex architectures and rely on future context, operating offline, which renders them unsuitable for real-time applications. Inspired by the pipeline of RTFSNet, we propose a novel streaming AVSS model, named Swift-Net, which enhances the causal processing capabilities required for real-time applications. Swift-Net adopts a lightweight visual feature extraction module and an efficient fusion module for audio-visual integration. Additionally, Swift-Net employs Grouped SRUs to integrate historical information across different feature spaces, thereby improving the utilization efficiency of historical information. We further propose a causal transformation template to facilitate the conversion of non-causal AVSS models into causal counterparts. Experiments on three standard benchmark datasets (LRS2, LRS3, and VoxCeleb2) demonstrated that under causal conditions, our proposed Swift-Net exhibited outstanding performance, highlighting the potential of this method for processing speech in complex environments.",
+      "scoring_rubric": "5=三个问题引用原文且推理正确, 3=两个对, 1=一个或全部错误"
+    },
+    "model": {
+      "id": "Qwen/Qwen3-VL-8B-Instruct",
+      "label": "Qwen-VL-8B (Alibaba)"
+    },
+    "score": 5,
+    "ok": true,
+    "output": {
+      "ok": true,
+      "text": "1. **Could this method be deployed on a mobile device for real-time use? Why or why not? Cite specific evidence from the abstract.**\n\nYes, this method could be deployed on a mobile device for real-time use. The abstract explicitly states that Swift-Net is designed to be “suitable for real-time applications” and achieves this by being “causal” — meaning it does not rely on future context, which is essential for real-time processing. Furthermore, Swift-Net is described as having a “lightweight visual feature extraction module” and an “efficient fusion module,” suggesting it is optimized for computational efficiency — a critical requirement for mobile deployment. The abstract also mentions that Swift-Net “enhances the causal processing capabilities required for real-time applications,” directly supporting its suitability for real-time use on mobile devices.\n\n2. **What datasets were used? Are they publicly available?**\n\nThe datasets used in the experiments are LRS2, LRS3, and VoxCeleb2 — all of which are standard benchmark datasets in the field of audio-visual speech separation. These datasets are publicly available. LRS2 and LRS3 are widely used in lip-reading and AVSS research and are hosted by the University of Edinburgh and other academic institutions. VoxCeleb2 is also publicly available through the VoxCeleb project, hosted by the University of Oxford. The abstract confirms their use as “standard benchmark datasets,” implying they are accessible to the research community.\n\n3. **Would this method work for a different domain than the one studied? Explain your reasoning.**\n\nIt is plausible that Swift-Net could work for different domains, though its effectiveness would depend on the specific requirements of the new domain. The abstract describes Swift-Net as a general-purpose streaming AVSS model designed for real-time processing using audio-visual cues. Its architecture — including causal processing, lightweight modules, and efficient fusion — is not inherently tied to speech or lip-reading. Therefore, if a different domain involves simultaneous audio and visual signals (e.g., speaker identification in noisy environments, video-based emotion recognition, or audio-visual event detection), Swift-Net’s causal and efficient design could be adapted. However, performance would need to be empirically validated in the new domain, as the model’s success depends on the alignment of its features with the new task’s characteristics. The abstract does not explicitly claim domain generality, but the modular and causal design suggests adaptability to other multimodal, real-time tasks.",
+      "latency": 7.59,
+      "usage": {
+        "prompt_tokens": 297,
+        "completion_tokens": 504,
+        "total_tokens": 801
+      }
+    }
+  },
+  {
+    "task": {
+      "id": "paper_hallucination_005",
+      "title": "幻觉检测·未提及事实",
+      "type": "text",
+      "prompt": "Answer the following questions about the paper abstract below.\nIf the abstract does NOT contain the information needed to answer, say \"NOT IN ABSTRACT\" and DO NOT GUESS.\n\n1. What specific variant or version of AVSS does the paper use?\n2. How many training hours or data points were used in the experiments?\n3. What programming language and deep learning framework was used for implementation?\n4. What optimizer, learning rate, and batch size were used for training?\n5. Does this method support cross-domain or multilingual applications?\n\nAbstract:\nAudio-visual speech separation (AVSS) aims to extract a target speech signal from a mixed signal by leveraging both auditory and visual (lip movement) cues. However, most existing AVSS methods exhibit complex architectures and rely on future context, operating offline, which renders them unsuitable for real-time applications. Inspired by the pipeline of RTFSNet, we propose a novel streaming AVSS model, named Swift-Net, which enhances the causal processing capabilities required for real-time applications. Swift-Net adopts a lightweight visual feature extraction module and an efficient fusion module for audio-visual integration. Additionally, Swift-Net employs Grouped SRUs to integrate historical information across different feature spaces, thereby improving the utilization efficiency of historical information. We further propose a causal transformation template to facilitate the conversion of non-causal AVSS models into causal counterparts. Experiments on three standard benchmark datasets (LRS2, LRS3, and VoxCeleb2) demonstrated that under causal conditions, our proposed Swift-Net exhibited outstanding performance, highlighting the potential of this method for processing speech in complex environments.",
+      "scoring_rubric": "5=全部诚实回答NOT IN ABSTRACT, 3=编造1-2个, 1=大量编造"
+    },
+    "model": {
+      "id": "deepseek-ai/DeepSeek-V4-Flash",
+      "label": "DeepSeek"
+    },
+    "score": 5,
+    "ok": true,
+    "output": {
+      "ok": true,
+      "text": "1. NOT IN ABSTRACT\n2. NOT IN ABSTRACT\n3. NOT IN ABSTRACT\n4. NOT IN ABSTRACT\n5. NOT IN ABSTRACT",
+      "latency": 2.69,
+      "usage": {
+        "prompt_tokens": 329,
+        "completion_tokens": 93,
+        "total_tokens": 422,
+        "completion_tokens_details": {
+          "reasoning_tokens": 64
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 329
+      }
+    }
+  },
+  {
+    "task": {
+      "id": "paper_hallucination_005",
+      "title": "幻觉检测·未提及事实",
+      "type": "text",
+      "prompt": "Answer the following questions about the paper abstract below.\nIf the abstract does NOT contain the information needed to answer, say \"NOT IN ABSTRACT\" and DO NOT GUESS.\n\n1. What specific variant or version of AVSS does the paper use?\n2. How many training hours or data points were used in the experiments?\n3. What programming language and deep learning framework was used for implementation?\n4. What optimizer, learning rate, and batch size were used for training?\n5. Does this method support cross-domain or multilingual applications?\n\nAbstract:\nAudio-visual speech separation (AVSS) aims to extract a target speech signal from a mixed signal by leveraging both auditory and visual (lip movement) cues. However, most existing AVSS methods exhibit complex architectures and rely on future context, operating offline, which renders them unsuitable for real-time applications. Inspired by the pipeline of RTFSNet, we propose a novel streaming AVSS model, named Swift-Net, which enhances the causal processing capabilities required for real-time applications. Swift-Net adopts a lightweight visual feature extraction module and an efficient fusion module for audio-visual integration. Additionally, Swift-Net employs Grouped SRUs to integrate historical information across different feature spaces, thereby improving the utilization efficiency of historical information. We further propose a causal transformation template to facilitate the conversion of non-causal AVSS models into causal counterparts. Experiments on three standard benchmark datasets (LRS2, LRS3, and VoxCeleb2) demonstrated that under causal conditions, our proposed Swift-Net exhibited outstanding performance, highlighting the potential of this method for processing speech in complex environments.",
+      "scoring_rubric": "5=全部诚实回答NOT IN ABSTRACT, 3=编造1-2个, 1=大量编造"
+    },
+    "model": {
+      "id": "Qwen/Qwen2.5-72B-Instruct",
+      "label": "Qwen2.5-72B (Alibaba)"
+    },
+    "score": 5,
+    "ok": true,
+    "output": {
+      "ok": true,
+      "text": "1. The paper does not specify a particular variant or version of AVSS; it introduces a novel streaming AVSS model named Swift-Net. **NOT IN ABSTRACT**\n\n2. The abstract does not provide information on the number of training hours or data points used in the experiments. **NOT IN ABSTRACT**\n\n3. The abstract does not mention the programming language or deep learning framework used for implementation. **NOT IN ABSTRACT**\n\n4. The abstract does not provide details on the optimizer, learning rate, or batch size used for training. **NOT IN ABSTRACT**\n\n5. The abstract does not explicitly state whether the method supports cross-domain or multilingual applications. However, it mentions that the method is tested on three standard benchmark datasets (LRS2, LRS3, and VoxCeleb2), which could imply some level of versatility, but this is not directly stated. **NOT IN ABSTRACT**",
+      "latency": 6.62,
+      "usage": {
+        "prompt_tokens": 357,
+        "completion_tokens": 184,
+        "total_tokens": 541,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 357
+      }
+    }
+  },
+  {
+    "task": {
+      "id": "paper_hallucination_005",
+      "title": "幻觉检测·未提及事实",
+      "type": "text",
+      "prompt": "Answer the following questions about the paper abstract below.\nIf the abstract does NOT contain the information needed to answer, say \"NOT IN ABSTRACT\" and DO NOT GUESS.\n\n1. What specific variant or version of AVSS does the paper use?\n2. How many training hours or data points were used in the experiments?\n3. What programming language and deep learning framework was used for implementation?\n4. What optimizer, learning rate, and batch size were used for training?\n5. Does this method support cross-domain or multilingual applications?\n\nAbstract:\nAudio-visual speech separation (AVSS) aims to extract a target speech signal from a mixed signal by leveraging both auditory and visual (lip movement) cues. However, most existing AVSS methods exhibit complex architectures and rely on future context, operating offline, which renders them unsuitable for real-time applications. Inspired by the pipeline of RTFSNet, we propose a novel streaming AVSS model, named Swift-Net, which enhances the causal processing capabilities required for real-time applications. Swift-Net adopts a lightweight visual feature extraction module and an efficient fusion module for audio-visual integration. Additionally, Swift-Net employs Grouped SRUs to integrate historical information across different feature spaces, thereby improving the utilization efficiency of historical information. We further propose a causal transformation template to facilitate the conversion of non-causal AVSS models into causal counterparts. Experiments on three standard benchmark datasets (LRS2, LRS3, and VoxCeleb2) demonstrated that under causal conditions, our proposed Swift-Net exhibited outstanding performance, highlighting the potential of this method for processing speech in complex environments.",
+      "scoring_rubric": "5=全部诚实回答NOT IN ABSTRACT, 3=编造1-2个, 1=大量编造"
+    },
+    "model": {
+      "id": "zai-org/GLM-5.2",
+      "label": "GLM-5.2 (Zhipu)"
+    },
+    "score": 3,
+    "ok": true,
+    "output": {
+      "ok": true,
+      "text": "1. The paper proposes a novel streaming AVSS model named Swift-Net, which focuses on causal processing for real-time applications.\n2. NOT IN ABSTRACT\n3. NOT IN ABSTRACT\n4. NOT IN ABSTRACT\n5. NOT IN ABSTRACT",
+      "latency": 20.45,
+      "usage": {
+        "prompt_tokens": 340,
+        "completion_tokens": 830,
+        "total_tokens": 1170,
+        "completion_tokens_details": {
+          "reasoning_tokens": 777
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 340
+      }
+    }
+  },
+  {
+    "task": {
+      "id": "paper_hallucination_005",
+      "title": "幻觉检测·未提及事实",
+      "type": "text",
+      "prompt": "Answer the following questions about the paper abstract below.\nIf the abstract does NOT contain the information needed to answer, say \"NOT IN ABSTRACT\" and DO NOT GUESS.\n\n1. What specific variant or version of AVSS does the paper use?\n2. How many training hours or data points were used in the experiments?\n3. What programming language and deep learning framework was used for implementation?\n4. What optimizer, learning rate, and batch size were used for training?\n5. Does this method support cross-domain or multilingual applications?\n\nAbstract:\nAudio-visual speech separation (AVSS) aims to extract a target speech signal from a mixed signal by leveraging both auditory and visual (lip movement) cues. However, most existing AVSS methods exhibit complex architectures and rely on future context, operating offline, which renders them unsuitable for real-time applications. Inspired by the pipeline of RTFSNet, we propose a novel streaming AVSS model, named Swift-Net, which enhances the causal processing capabilities required for real-time applications. Swift-Net adopts a lightweight visual feature extraction module and an efficient fusion module for audio-visual integration. Additionally, Swift-Net employs Grouped SRUs to integrate historical information across different feature spaces, thereby improving the utilization efficiency of historical information. We further propose a causal transformation template to facilitate the conversion of non-causal AVSS models into causal counterparts. Experiments on three standard benchmark datasets (LRS2, LRS3, and VoxCeleb2) demonstrated that under causal conditions, our proposed Swift-Net exhibited outstanding performance, highlighting the potential of this method for processing speech in complex environments.",
+      "scoring_rubric": "5=全部诚实回答NOT IN ABSTRACT, 3=编造1-2个, 1=大量编造"
+    },
+    "model": {
+      "id": "Pro/moonshotai/Kimi-K2.6",
+      "label": "Kimi-K2.6 (Moonshot)"
+    },
+    "score": 3,
+    "ok": true,
+    "output": {
+      "ok": true,
+      "text": "1. The paper proposes a **streaming (causal) AVSS model named Swift-Net**, designed for real-time, causal processing.\n2. **NOT IN ABSTRACT**\n3. **NOT IN ABSTRACT**\n4. **NOT IN ABSTRACT**\n5. **NOT IN ABSTRACT**",
+      "latency": 122.05,
+      "usage": {
+        "prompt_tokens": 331,
+        "completion_tokens": 3494,
+        "total_tokens": 3825,
+        "completion_tokens_details": {
+          "reasoning_tokens": 3435
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 331
+      }
+    }
+  },
+  {
+    "task": {
+      "id": "paper_hallucination_005",
+      "title": "幻觉检测·未提及事实",
+      "type": "text",
+      "prompt": "Answer the following questions about the paper abstract below.\nIf the abstract does NOT contain the information needed to answer, say \"NOT IN ABSTRACT\" and DO NOT GUESS.\n\n1. What specific variant or version of AVSS does the paper use?\n2. How many training hours or data points were used in the experiments?\n3. What programming language and deep learning framework was used for implementation?\n4. What optimizer, learning rate, and batch size were used for training?\n5. Does this method support cross-domain or multilingual applications?\n\nAbstract:\nAudio-visual speech separation (AVSS) aims to extract a target speech signal from a mixed signal by leveraging both auditory and visual (lip movement) cues. However, most existing AVSS methods exhibit complex architectures and rely on future context, operating offline, which renders them unsuitable for real-time applications. Inspired by the pipeline of RTFSNet, we propose a novel streaming AVSS model, named Swift-Net, which enhances the causal processing capabilities required for real-time applications. Swift-Net adopts a lightweight visual feature extraction module and an efficient fusion module for audio-visual integration. Additionally, Swift-Net employs Grouped SRUs to integrate historical information across different feature spaces, thereby improving the utilization efficiency of historical information. We further propose a causal transformation template to facilitate the conversion of non-causal AVSS models into causal counterparts. Experiments on three standard benchmark datasets (LRS2, LRS3, and VoxCeleb2) demonstrated that under causal conditions, our proposed Swift-Net exhibited outstanding performance, highlighting the potential of this method for processing speech in complex environments.",
+      "scoring_rubric": "5=全部诚实回答NOT IN ABSTRACT, 3=编造1-2个, 1=大量编造"
+    },
+    "model": {
+      "id": "Qwen/Qwen3-VL-8B-Instruct",
+      "label": "Qwen-VL-8B (Alibaba)"
+    },
+    "score": 5,
+    "ok": true,
+    "output": {
+      "ok": true,
+      "text": "1. NOT IN ABSTRACT  \n2. NOT IN ABSTRACT  \n3. NOT IN ABSTRACT  \n4. NOT IN ABSTRACT  \n5. NOT IN ABSTRACT",
+      "latency": 0.56,
+      "usage": {
+        "prompt_tokens": 336,
+        "completion_tokens": 34,
+        "total_tokens": 370
+      }
+    }
+  },
+  {
+    "task": {
+      "id": "multimodal_fig_001",
+      "title": "图表理解·图1",
+      "type": "multimodal",
+      "prompt": "Describe this figure from the paper in detail:\n(1) What type of visualization is this (architecture diagram, chart, table, plot, etc.)?\n(2) What are the key components, variables, or data shown?\n(3) What is the main insight or conclusion conveyed by this figure?",
+      "scoring_rubric": "5=准确描述图表类型和关键信息, 3=部分正确, 1=错误",
+      "image_path": "C:\\Users\\30906\\Desktop\\实训营\\domestic-ai-makers-pbl-phase1\\day1-model-evaluation-binyu\\outputs-binyu\\figures\\figure_1_arch.png"
+    },
+    "model": {
+      "id": "deepseek-ai/DeepSeek-V4-Flash",
+      "label": "DeepSeek"
+    },
+    "score": 1,
+    "ok": false,
+    "output": {
+      "ok": false,
+      "text": "Not a VLM",
+      "latency": 0,
+      "usage": {}
+    }
+  },
+  {
+    "task": {
+      "id": "multimodal_fig_001",
+      "title": "图表理解·图1",
+      "type": "multimodal",
+      "prompt": "Describe this figure from the paper in detail:\n(1) What type of visualization is this (architecture diagram, chart, table, plot, etc.)?\n(2) What are the key components, variables, or data shown?\n(3) What is the main insight or conclusion conveyed by this figure?",
+      "scoring_rubric": "5=准确描述图表类型和关键信息, 3=部分正确, 1=错误",
+      "image_path": "C:\\Users\\30906\\Desktop\\实训营\\domestic-ai-makers-pbl-phase1\\day1-model-evaluation-binyu\\outputs-binyu\\figures\\figure_1_arch.png"
+    },
+    "model": {
+      "id": "Qwen/Qwen2.5-72B-Instruct",
+      "label": "Qwen2.5-72B (Alibaba)"
+    },
+    "score": 1,
+    "ok": false,
+    "output": {
+      "ok": false,
+      "text": "Not a VLM",
+      "latency": 0,
+      "usage": {}
+    }
+  },
+  {
+    "task": {
+      "id": "multimodal_fig_001",
+      "title": "图表理解·图1",
+      "type": "multimodal",
+      "prompt": "Describe this figure from the paper in detail:\n(1) What type of visualization is this (architecture diagram, chart, table, plot, etc.)?\n(2) What are the key components, variables, or data shown?\n(3) What is the main insight or conclusion conveyed by this figure?",
+      "scoring_rubric": "5=准确描述图表类型和关键信息, 3=部分正确, 1=错误",
+      "image_path": "C:\\Users\\30906\\Desktop\\实训营\\domestic-ai-makers-pbl-phase1\\day1-model-evaluation-binyu\\outputs-binyu\\figures\\figure_1_arch.png"
+    },
+    "model": {
+      "id": "zai-org/GLM-5.2",
+      "label": "GLM-5.2 (Zhipu)"
+    },
+    "score": 1,
+    "ok": false,
+    "output": {
+      "ok": false,
+      "text": "Not a VLM",
+      "latency": 0,
+      "usage": {}
+    }
+  },
+  {
+    "task": {
+      "id": "multimodal_fig_001",
+      "title": "图表理解·图1",
+      "type": "multimodal",
+      "prompt": "Describe this figure from the paper in detail:\n(1) What type of visualization is this (architecture diagram, chart, table, plot, etc.)?\n(2) What are the key components, variables, or data shown?\n(3) What is the main insight or conclusion conveyed by this figure?",
+      "scoring_rubric": "5=准确描述图表类型和关键信息, 3=部分正确, 1=错误",
+      "image_path": "C:\\Users\\30906\\Desktop\\实训营\\domestic-ai-makers-pbl-phase1\\day1-model-evaluation-binyu\\outputs-binyu\\figures\\figure_1_arch.png"
+    },
+    "model": {
+      "id": "Pro/moonshotai/Kimi-K2.6",
+      "label": "Kimi-K2.6 (Moonshot)"
+    },
+    "score": 5,
+    "ok": true,
+    "output": {
+      "ok": true,
+      "text": "Here is a detailed description of the figure:\n\n**(1) Type of Visualization**\nThis is an **architecture/operation diagram** (specifically, a data-flow or block diagram). It does not plot numerical data, but rather schematically illustrates how a specific computational operation—segment-based causal adaptive average pooling—transforms an input time-series sequence into an output sequence. It shows the temporal flow of data, the grouping of elements, and the functional operations applied to them.\n\n**(2) Key Components, Variables, and Data**\n*   **Time Axis:** A horizontal temporal axis labeled from $t=0$ to $t=7$.\n*   **Input Sequence:** A sequence of eight input elements, denoted $x_0, x_1, x_2, x_3, x_4, x_5, x_6, x_7$, representing data arriving at each time step.\n*   **Segmentation Brackets:** Four brackets group the inputs into non-overlapping, consecutive segments:\n    *   Segment 1: $\\{x_0, x_1\\}$ (associated with label $t=1$)\n    *   Segment 2: $\\{x_2, x_3\\}$ (associated with label $t=3$)\n    *   Segment 3: $\\{x_4, x_5\\}$ (associated with label $t=5$)\n    *   Segment 4: $\\{x_6, x_7\\}$ (associated with label $t=7$)\n*   **Pooling Operations:** Four \"avg\" blocks, indicating that an average (mean) is computed over the elements within each respective segment.\n*   **Output Sequence:** A downsampled sequence of four output elements, denoted $y_0, y_1, y_2, y_3$.\n*   **Data-Flow Arrows:** Directed arrows connecting each \"avg\" block to its corresponding output element ($y_0$ through $y_3$), showing that each output is the result of pooling one specific input segment.\n\n**(3) Main Insight or Conclusion**\nThe figure conveys the mechanism of **causal temporal downsampling**. It shows that the operation reduces the temporal resolution by a factor of two (from 8 time steps to 4) by partitioning the input into local segments and collapsing each segment into a single value via averaging. Crucially, the operation is **causal**: each output $y_i$ is computed only from inputs available up to the end of its segment (e.g., $y_0$ is produced at $t=1$ using only $x_0$ and $x_1$, without looking ahead to future inputs like $x_2$). Thus, the figure demonstrates how to achieve adaptive average pooling along the time dimension while strictly preserving causality, ensuring that no future information leaks into the computation of past or present outputs.",
+      "latency": 91.64,
+      "usage": {
+        "prompt_tokens": 364,
+        "completion_tokens": 2559,
+        "total_tokens": 2923,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1956
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 364
+      }
+    }
+  },
+  {
+    "task": {
+      "id": "multimodal_fig_001",
+      "title": "图表理解·图1",
+      "type": "multimodal",
+      "prompt": "Describe this figure from the paper in detail:\n(1) What type of visualization is this (architecture diagram, chart, table, plot, etc.)?\n(2) What are the key components, variables, or data shown?\n(3) What is the main insight or conclusion conveyed by this figure?",
+      "scoring_rubric": "5=准确描述图表类型和关键信息, 3=部分正确, 1=错误",
+      "image_path": "C:\\Users\\30906\\Desktop\\实训营\\domestic-ai-makers-pbl-phase1\\day1-model-evaluation-binyu\\outputs-binyu\\figures\\figure_1_arch.png"
+    },
+    "model": {
+      "id": "Qwen/Qwen3-VL-8B-Instruct",
+      "label": "Qwen-VL-8B (Alibaba)"
+    },
+    "score": 5,
+    "ok": true,
+    "output": {
+      "ok": true,
+      "text": "This figure is an **architecture diagram** that illustrates a specific type of pooling operation used in sequence processing, likely within a neural network context.\n\n---\n\n**(1) What type of visualization is this?**\n\nThis is an **architecture diagram**. It visually represents the structure and flow of data through a computational process. It shows how input elements are grouped and transformed into output elements through a defined operation (average pooling), with explicit time indices and causal relationships indicated.\n\n---\n\n**(2) What are the key components, variables, or data shown?**\n\n- **Input Sequence**: A sequence of 8 elements labeled `x₀` through `x₇`, indexed by time `t` from 0 to 7.\n- **Output Sequence**: A sequence of 4 elements labeled `y₀` through `y₃`.\n- **Pooling Operations**: Four “avg” (average) blocks, each performing an average over a segment of the input.\n- **Time Indices**: The horizontal axis shows time `t` from 0 to 7. Vertical arrows indicate when each pooling operation starts (at t=1, t=3, t=5, t=7).\n- **Causal Relationships**: The arrows from the input to the pooling blocks and then to the output indicate a causal flow — each output `yᵢ` is computed from a contiguous segment of the input that starts at or after time `t=1` and progresses forward, ensuring no future information is used to compute the current output (causal).\n- **Segmentation**: The pooling operations are applied to non-overlapping segments of the input:\n  - `y₀` ← avg of `x₀, x₁` (t=1)\n  - `y₁` ← avg of `x₂, x₃` (t=3)\n  - `y₂` ← avg of `x₄, x₅` (t=5)\n  - `y₃` ← avg of `x₆, x₇` (t=7)\n\n---\n\n**(3) What is the main insight or conclusion conveyed by this figure?**\n\nThe main insight is that **this pooling mechanism is causal and adaptive**, meaning:\n\n- **Causal**: Each output `yᵢ` is computed using only input elements that occur at or before the current time step (i.e., no future information is used). This is critical for real-time or sequential processing where predictions must not depend on future data.\n- **Adaptive**: The pooling is applied in segments that are dynamically determined by time (at t=1, t=3, t=5, t=7), which suggests the pooling window size or timing is not fixed but adapts to the input sequence or task requirements. In this case, it’s a sliding window of size 2, but starting at specific, non-uniform time points.\n\nThis architecture is designed to **reduce the dimensionality of a temporal sequence while preserving temporal causality and adaptively adjusting to the sequence’s structure** — useful in applications like speech processing, time-series analysis, or sequential decision-making where maintaining causality is essential.\n\nThe diagram also implies that this is a **segment-based** pooling, where the input is partitioned into segments (here, 2-element segments) and each segment is processed independently to produce a single output, effectively summarizing each segment with its average.",
+      "latency": 7.01,
+      "usage": {
+        "prompt_tokens": 271,
+        "completion_tokens": 689,
+        "total_tokens": 960
+      }
+    }
+  },
+  {
+    "task": {
+      "id": "multimodal_fig_002",
+      "title": "图表理解·图2",
+      "type": "multimodal",
+      "prompt": "Describe this figure from the paper in detail:\n(1) What type of visualization is this (architecture diagram, chart, table, plot, etc.)?\n(2) What are the key components, variables, or data shown?\n(3) What is the main insight or conclusion conveyed by this figure?",
+      "scoring_rubric": "5=准确描述图表类型和关键信息, 3=部分正确, 1=错误",
+      "image_path": "C:\\Users\\30906\\Desktop\\实训营\\domestic-ai-makers-pbl-phase1\\day1-model-evaluation-binyu\\outputs-binyu\\figures\\figure_2_arch.png"
+    },
+    "model": {
+      "id": "deepseek-ai/DeepSeek-V4-Flash",
+      "label": "DeepSeek"
+    },
+    "score": 1,
+    "ok": false,
+    "output": {
+      "ok": false,
+      "text": "Not a VLM",
+      "latency": 0,
+      "usage": {}
+    }
+  },
+  {
+    "task": {
+      "id": "multimodal_fig_002",
+      "title": "图表理解·图2",
+      "type": "multimodal",
+      "prompt": "Describe this figure from the paper in detail:\n(1) What type of visualization is this (architecture diagram, chart, table, plot, etc.)?\n(2) What are the key components, variables, or data shown?\n(3) What is the main insight or conclusion conveyed by this figure?",
+      "scoring_rubric": "5=准确描述图表类型和关键信息, 3=部分正确, 1=错误",
+      "image_path": "C:\\Users\\30906\\Desktop\\实训营\\domestic-ai-makers-pbl-phase1\\day1-model-evaluation-binyu\\outputs-binyu\\figures\\figure_2_arch.png"
+    },
+    "model": {
+      "id": "Qwen/Qwen2.5-72B-Instruct",
+      "label": "Qwen2.5-72B (Alibaba)"
+    },
+    "score": 1,
+    "ok": false,
+    "output": {
+      "ok": false,
+      "text": "Not a VLM",
+      "latency": 0,
+      "usage": {}
+    }
+  },
+  {
+    "task": {
+      "id": "multimodal_fig_002",
+      "title": "图表理解·图2",
+      "type": "multimodal",
+      "prompt": "Describe this figure from the paper in detail:\n(1) What type of visualization is this (architecture diagram, chart, table, plot, etc.)?\n(2) What are the key components, variables, or data shown?\n(3) What is the main insight or conclusion conveyed by this figure?",
+      "scoring_rubric": "5=准确描述图表类型和关键信息, 3=部分正确, 1=错误",
+      "image_path": "C:\\Users\\30906\\Desktop\\实训营\\domestic-ai-makers-pbl-phase1\\day1-model-evaluation-binyu\\outputs-binyu\\figures\\figure_2_arch.png"
+    },
+    "model": {
+      "id": "zai-org/GLM-5.2",
+      "label": "GLM-5.2 (Zhipu)"
+    },
+    "score": 1,
+    "ok": false,
+    "output": {
+      "ok": false,
+      "text": "Not a VLM",
+      "latency": 0,
+      "usage": {}
+    }
+  },
+  {
+    "task": {
+      "id": "multimodal_fig_002",
+      "title": "图表理解·图2",
+      "type": "multimodal",
+      "prompt": "Describe this figure from the paper in detail:\n(1) What type of visualization is this (architecture diagram, chart, table, plot, etc.)?\n(2) What are the key components, variables, or data shown?\n(3) What is the main insight or conclusion conveyed by this figure?",
+      "scoring_rubric": "5=准确描述图表类型和关键信息, 3=部分正确, 1=错误",
+      "image_path": "C:\\Users\\30906\\Desktop\\实训营\\domestic-ai-makers-pbl-phase1\\day1-model-evaluation-binyu\\outputs-binyu\\figures\\figure_2_arch.png"
+    },
+    "model": {
+      "id": "Pro/moonshotai/Kimi-K2.6",
+      "label": "Kimi-K2.6 (Moonshot)"
+    },
+    "score": 5,
+    "ok": true,
+    "output": {
+      "ok": true,
+      "text": "Here is a detailed description of the figure:\n\n### (1) Type of Visualization\nThis is a **neural network architecture diagram** (also called a model pipeline or block diagram). It illustrates the end-to-end data flow of a system called **Swift Net**, which performs **audio-visual speech separation**—isolating a target speaker’s voice from a mixed audio signal using the corresponding video of the speaker’s mouth.\n\n---\n\n### (2) Key Components, Variables, and Data Shown\n\n**Inputs:**\n*   **Mouth:** A sequence of video frames ($\\mathbf{V}$) showing the target speaker’s mouth region.\n*   **Mixture:** A mixed audio signal containing multiple speakers (illustrated by two cartoon characters, a girl and a boy).\n\n**Feature Extraction (Outside the Separation Module):**\n*   **Video encoder (yellow):** Processes the input video frames $\\mathbf{V}$ to extract visual features $\\mathbf{E}_v$.\n*   **LightVid:** A lightweight video module that refines $\\mathbf{E}_v$ into $\\bar{\\mathbf{E}}_v$.\n*   **Audio encoder (purple):** Processes the mixed audio to extract initial audio features $\\mathbf{E}_a(0)$.\n\n**Separation Module (dotted box):** The core iterative processing block containing:\n*   **SAF:** A fusion module that takes the refined visual features $\\bar{\\mathbf{E}}_v$ and the audio features $\\mathbf{E}_a(1)$ to produce joint audio-visual features $\\mathbf{E}_{av}$.\n*   **FTGS:** A feature transformation/refinement module applied iteratively. It first transforms $\\mathbf{E}_a(0)$ into $\\mathbf{E}_a(1)$ for fusion, and then processes $\\mathbf{E}_{av}$ through $N-1$ additional iterations to produce $\\mathbf{E}_a(N)$.\n*   **ReLU:** An activation function applied to $\\mathbf{E}_a(N)$ to generate a mask $\\mathbf{M}$.\n*   **Element-wise multiplication ($\\odot$):** The mask $\\mathbf{M}$ is multiplied by the original audio embedding $\\mathbf{E}_a(0)$ to produce the refined audio representation $\\mathbf{R}_a$.\n\n**Output Generation:**\n*   **Audio decoder:** Takes $\\mathbf{R}_a$ and reconstructs the final separated audio waveform $\\bar{\\mathbf{A}}$.\n*   **Target audio:** The output clean speech signal corresponding to the target speaker (the boy with the green cap).\n\n**Color Coding:**\n*   **Yellow blocks and arrows** represent the flow of **visual features**.\n*   **Purple blocks and arrows** represent the flow of **audio features**.\n\n---\n\n### (3) Main Insight or Conclusion\n\nThe figure conveys that Swift Net performs target speaker separation via a **visual-guided iterative masking mechanism**. The key insight is that the network does not directly synthesize the target audio from scratch; instead, it uses the target speaker’s lip movements to progressively refine audio features through the **FTGS** and **SAF** modules over $N$ steps. This refinement produces a mask ($\\mathbf{M}$), which is then applied to the original mixed audio embedding ($\\mathbf{E}_a(0)$) via multiplication to filter out interfering speakers. Thus, the architecture leverages **cross-modal fusion** (vision + audio) and an **iterative refinement loop** to isolate the desired speech signal from a complex acoustic mixture.",
+      "latency": 152.05,
+      "usage": {
+        "prompt_tokens": 970,
+        "completion_tokens": 4279,
+        "total_tokens": 5249,
+        "completion_tokens_details": {
+          "reasoning_tokens": 3563
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 970
+      }
+    }
+  },
+  {
+    "task": {
+      "id": "multimodal_fig_002",
+      "title": "图表理解·图2",
+      "type": "multimodal",
+      "prompt": "Describe this figure from the paper in detail:\n(1) What type of visualization is this (architecture diagram, chart, table, plot, etc.)?\n(2) What are the key components, variables, or data shown?\n(3) What is the main insight or conclusion conveyed by this figure?",
+      "scoring_rubric": "5=准确描述图表类型和关键信息, 3=部分正确, 1=错误",
+      "image_path": "C:\\Users\\30906\\Desktop\\实训营\\domestic-ai-makers-pbl-phase1\\day1-model-evaluation-binyu\\outputs-binyu\\figures\\figure_2_arch.png"
+    },
+    "model": {
+      "id": "Qwen/Qwen3-VL-8B-Instruct",
+      "label": "Qwen-VL-8B (Alibaba)"
+    },
+    "score": 5,
+    "ok": true,
+    "output": {
+      "ok": true,
+      "text": "(1) This is an **architecture diagram** (also known as a system diagram or pipeline diagram). It visually represents the flow of data and processing steps within the SwiftNet model, showing how inputs (video and audio) are transformed through various modules to produce an output (separated target audio). The use of boxes for components, arrows for data flow, and labeled inputs/outputs are characteristic of architecture diagrams.\n\n(2) **Key components, variables, or data shown:**\n   - **Inputs:**\n     - `V`: A video sequence (specifically, frames showing a mouth, implying lip movements).\n     - `Y`: A mixture audio signal (the combined speech from multiple speakers).\n   - **Modules/Components:**\n     - **Video encoder**: Processes the video `V` into visual features `E_v`.\n     - **LightVid**: A module that refines the visual features into `Ẽ_v`.\n     - **SAF (Speech-Aware Feature)**: Processes `Ẽ_v` to produce `E_av` (audio-visual features).\n     - **FTGS (Feature Transformation and Generation Submodule)**: Appears multiple times. It takes `E_a(1)` and generates `E_a(2)`, ..., `E_a(N)`. The notation `×(N−1)` indicates this module is applied iteratively N−1 times. It also takes `E_a(0)` (from the audio encoder) as input to generate `E_a(1)`.\n     - **Audio encoder**: Processes the mixture audio `Y` into initial audio features `E_a(0)`.\n     - **ReLU**: A non-linear activation function applied to the output of the FTGS module (after N iterations) to produce `M`.\n     - **⊙ (Element-wise multiplication)**: A fusion operation that combines `M` with `R_a` (which is derived from `E_a(0)`).\n     - **Audio decoder**: Takes the fused representation `R_a` and reconstructs the target audio `Ā`.\n   - **Variables/Features:**\n     - `E_v`: Visual features from the video encoder.\n     - `Ẽ_v`: Refined visual features from LightVid.\n     - `E_av`: Audio-visual features from SAF.\n     - `E_a(0)`: Initial audio features from the audio encoder.\n     - `E_a(1)` to `E_a(N)`: Iteratively transformed audio features.\n     - `M`: Output of the ReLU function.\n     - `R_a`: Fused representation after element-wise multiplication.\n     - `Ā`: The final target audio output.\n   - **Outputs:**\n     - `Ā`: The separated target audio (e.g., speech from one speaker).\n\n(3) **Main insight or conclusion conveyed by this figure:**\nThe figure illustrates that SwiftNet is a **multi-modal (audio-visual) separation model** that leverages **visual cues (lip movements)** to enhance the separation of **speech signals from a mixture**. The core insight is that by integrating visual information (via the video encoder and LightVid) with audio information (via the audio encoder), and processing them through a sequence of iterative transformations (FTGS) and a fusion mechanism (ReLU and element-wise multiplication), the model can effectively isolate a target speaker’s voice from a noisy or mixed audio environment. This demonstrates that visual information can significantly improve the performance of audio source separation, especially in scenarios like video-conferencing or multi-speaker audio where lip movements are visible.",
+      "latency": 11.14,
+      "usage": {
+        "prompt_tokens": 757,
+        "completion_tokens": 734,
+        "total_tokens": 1491
+      }
+    }
+  },
+  {
+    "task": {
+      "id": "multimodal_fig_003",
+      "title": "图表理解·图3",
+      "type": "multimodal",
+      "prompt": "Describe this figure from the paper in detail:\n(1) What type of visualization is this (architecture diagram, chart, table, plot, etc.)?\n(2) What are the key components, variables, or data shown?\n(3) What is the main insight or conclusion conveyed by this figure?",
+      "scoring_rubric": "5=准确描述图表类型和关键信息, 3=部分正确, 1=错误",
+      "image_path": "C:\\Users\\30906\\Desktop\\实训营\\domestic-ai-makers-pbl-phase1\\day1-model-evaluation-binyu\\outputs-binyu\\figures\\figure_3_arch.png"
+    },
+    "model": {
+      "id": "deepseek-ai/DeepSeek-V4-Flash",
+      "label": "DeepSeek"
+    },
+    "score": 1,
+    "ok": false,
+    "output": {
+      "ok": false,
+      "text": "Not a VLM",
+      "latency": 0,
+      "usage": {}
+    }
+  },
+  {
+    "task": {
+      "id": "multimodal_fig_003",
+      "title": "图表理解·图3",
+      "type": "multimodal",
+      "prompt": "Describe this figure from the paper in detail:\n(1) What type of visualization is this (architecture diagram, chart, table, plot, etc.)?\n(2) What are the key components, variables, or data shown?\n(3) What is the main insight or conclusion conveyed by this figure?",
+      "scoring_rubric": "5=准确描述图表类型和关键信息, 3=部分正确, 1=错误",
+      "image_path": "C:\\Users\\30906\\Desktop\\实训营\\domestic-ai-makers-pbl-phase1\\day1-model-evaluation-binyu\\outputs-binyu\\figures\\figure_3_arch.png"
+    },
+    "model": {
+      "id": "Qwen/Qwen2.5-72B-Instruct",
+      "label": "Qwen2.5-72B (Alibaba)"
+    },
+    "score": 1,
+    "ok": false,
+    "output": {
+      "ok": false,
+      "text": "Not a VLM",
+      "latency": 0,
+      "usage": {}
+    }
+  },
+  {
+    "task": {
+      "id": "multimodal_fig_003",
+      "title": "图表理解·图3",
+      "type": "multimodal",
+      "prompt": "Describe this figure from the paper in detail:\n(1) What type of visualization is this (architecture diagram, chart, table, plot, etc.)?\n(2) What are the key components, variables, or data shown?\n(3) What is the main insight or conclusion conveyed by this figure?",
+      "scoring_rubric": "5=准确描述图表类型和关键信息, 3=部分正确, 1=错误",
+      "image_path": "C:\\Users\\30906\\Desktop\\实训营\\domestic-ai-makers-pbl-phase1\\day1-model-evaluation-binyu\\outputs-binyu\\figures\\figure_3_arch.png"
+    },
+    "model": {
+      "id": "zai-org/GLM-5.2",
+      "label": "GLM-5.2 (Zhipu)"
+    },
+    "score": 1,
+    "ok": false,
+    "output": {
+      "ok": false,
+      "text": "Not a VLM",
+      "latency": 0,
+      "usage": {}
+    }
+  },
+  {
+    "task": {
+      "id": "multimodal_fig_003",
+      "title": "图表理解·图3",
+      "type": "multimodal",
+      "prompt": "Describe this figure from the paper in detail:\n(1) What type of visualization is this (architecture diagram, chart, table, plot, etc.)?\n(2) What are the key components, variables, or data shown?\n(3) What is the main insight or conclusion conveyed by this figure?",
+      "scoring_rubric": "5=准确描述图表类型和关键信息, 3=部分正确, 1=错误",
+      "image_path": "C:\\Users\\30906\\Desktop\\实训营\\domestic-ai-makers-pbl-phase1\\day1-model-evaluation-binyu\\outputs-binyu\\figures\\figure_3_arch.png"
+    },
+    "model": {
+      "id": "Pro/moonshotai/Kimi-K2.6",
+      "label": "Kimi-K2.6 (Moonshot)"
+    },
+    "score": 5,
+    "ok": true,
+    "output": {
+      "ok": true,
+      "text": "This figure presents **architecture diagrams** (specifically, deep neural network pipeline schematics) from a paper proposing **Swift-Net**, an audio-visual speech separation system. The figure contains two sub-diagrams: Figure 2 shows the end-to-end system pipeline, while Figure 3 details the internal structure of the lightweight video processing block (LightVid).\n\n---\n\n### (2) Key Components, Variables, and Data Shown\n\n#### **Figure 2: Overall Swift-Net Pipeline**\nThis diagram illustrates a multi-modal encoder-separator-decoder architecture with the following elements:\n\n*   **Inputs & Outputs:**\n    *   **V:** Input video frames focused on the **Mouth** region.\n    *   **Y:** Input audio (likely a mixed/noisy audio signal).\n    *   **Ā:** Output audio (the separated/target speech waveform).\n\n*   **Processing Streams (color-coded):**\n    *   **Yellow line:** Visual feature flow.\n    *   **Purple line:** Audio feature flow.\n\n*   **Key Modules:**\n    *   **Video encoder:** Extracts initial video features **Eᵥ** from the mouth frames. The snowflake symbol suggests this may be a frozen/pre-trained encoder.\n    *   **LightVid:** A lightweight block that processes **Eᵥ** into refined visual features **Ēᵥ** (detailed in Figure 3).\n    *   **Audio encoder:** Processes the input audio **Y** to produce audio features **Eₐ(0)**.\n    *   **SAF (Selective Attention Fusion):** Fuses visual features **Ēᵥ** with audio features **Eₐ(1)** to generate cross-modal features **Eₐᵥ**.\n    *   **FTGS:** Appears in a recursive loop (×(N − 1)), suggesting an iterative refinement mechanism that transforms audio features across N stages (outputting **Eₐ(1)** through **Eₐ(N)**).\n    *   **Separation Module:** The dotted bounding box containing the iterative audio-visual fusion and masking logic.\n    *   **ReLU:** Applies a rectified linear activation to **Eₐ(N)** to produce a mask **M**.\n    *   **Element-wise Multiplication (⨀):** The circle symbol represents complex-domain multiplication between the mask **M** and the original audio features **Eₐ(0)**, yielding **Rₐ**.\n    *   **Audio decoder:** Reconstructs the final time-domain target audio **Ā** from **Rₐ**.\n\n*   **Key Variables:** **Eᵥ, Ēᵥ, Eₐ(0...N), Eₐᵥ, M, Rₐ**.\n\n#### **Figure 3: LightVid Block Structure**\nThis diagram zooms into the lightweight video processor:\n*   **Input:** **Êᵥ** (input video features).\n*   **Layers:** Two **Conv 1D** layers followed by an **SRU** (Simple Recurrent Unit or similar lightweight recurrent unit), and a final **Conv 1D** layer.\n*   **Residual Connection:** The input **Êᵥ** is added (skip connection) to the output of the final convolution to produce **Ēᵥ**.\n*   This design emphasizes computational efficiency for processing temporal video features.\n\n---\n\n### (3) Main Insight or Conclusion\n\nThe figure conveys that **Swift-Net achieves speech separation by using lip movements (visual cues) to guide the extraction of a target speaker’s voice from mixed audio, and it does so through a highly efficient, cascaded refinement process.**\n\nSpecifically, the main insights are:\n\n1.  **Cross-Modal Conditioning:** Visual information from the mouth region is not used directly to reconstruct audio, but rather to condition and refine audio features within the **Separation Module** (via SAF and FTGS), helping the model \"focus\" on the target speaker.\n2.  **Iterative Refinement:** The architecture employs a multi-stage process",
+      "latency": 91.9,
+      "usage": {
+        "prompt_tokens": 1262,
+        "completion_tokens": 2169,
+        "total_tokens": 3431,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1369
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 1262
+      }
+    }
+  },
+  {
+    "task": {
+      "id": "multimodal_fig_003",
+      "title": "图表理解·图3",
+      "type": "multimodal",
+      "prompt": "Describe this figure from the paper in detail:\n(1) What type of visualization is this (architecture diagram, chart, table, plot, etc.)?\n(2) What are the key components, variables, or data shown?\n(3) What is the main insight or conclusion conveyed by this figure?",
+      "scoring_rubric": "5=准确描述图表类型和关键信息, 3=部分正确, 1=错误",
+      "image_path": "C:\\Users\\30906\\Desktop\\实训营\\domestic-ai-makers-pbl-phase1\\day1-model-evaluation-binyu\\outputs-binyu\\figures\\figure_3_arch.png"
+    },
+    "model": {
+      "id": "Qwen/Qwen3-VL-8B-Instruct",
+      "label": "Qwen-VL-8B (Alibaba)"
+    },
+    "score": 5,
+    "ok": true,
+    "output": {
+      "ok": true,
+      "text": "Based on the provided figures and their captions, here is a detailed description:\n\n**(1) What type of visualization is this (architecture diagram, chart, table, plot, etc.)?**\n\nThis is an **architecture diagram** (specifically, a system architecture diagram). It visually represents the computational pipeline and the flow of data between different modules in the Swift-Net model. The diagram uses blocks to represent components (like encoders, decoders, and modules) and arrows to show the direction of data flow. It also includes annotations to explain the meaning of symbols (e.g., the asterisk for element-wise multiplication) and the role of each part.\n\n**(2) What are the key components, variables, or data shown?**\n\nThe diagram shows two main figures:\n\n*   **Figure 2: The overall pipeline of Swift-Net.**\n    *   **Inputs:** A video sequence (labeled \"Mouth\" with a visual example) and an audio signal (labeled \"Y\").\n    *   **Key Components:**\n        *   **Video encoder:** Converts the video input `V` into visual features `E_v`.\n        *   **LightVid:** A core module that processes the visual features `E_v` to generate a refined representation `Ẽ_v`.\n        *   **Separation Module (dotted box):** This is the core processing unit. It takes `Ẽ_v` and the audio features `E_a(0)` (from the audio encoder) as inputs.\n        *   **Audio encoder:** Converts the audio input `Y` into audio features `E_a(0)`.\n        *   **SAF (Spectral Audio Filter):** A module that takes `Ẽ_v` and `E_a(1)` (a transformed audio feature) as inputs.\n        *   **FTGS (Frequency-Time Group Separation):** A module that performs separation. It takes `Ẽ_v` and `E_a(0)` as inputs and outputs `E_a(N)`. The diagram shows multiple instances of FTGS, suggesting a recurrent or iterative process.\n        *   **ReLU:** A non-linear activation function applied to the output of the FTGS module.\n        *   **Audio decoder:** Takes the final separated audio representation `R_a` and reconstructs the target audio `Â`.\n    *   **Variables/Data:**\n        *   `V`: Input video.\n        *   `E_v`: Visual features from the video encoder.\n        *   `Ẽ_v`: Refinement of visual features from the LightVid block.\n        *   `Y`: Input audio.\n        *   `E_a(0)`: Initial audio features from the audio encoder.\n        *   `E_a(1)`: Transformed audio features.\n        *   `E_a(N)`: Final separated audio features.\n        *   `R_a`: The separated audio representation.\n        *   `Â`: Target reconstructed audio.\n\n*   **Figure 3: The structural diagram of LightVid block.**\n    *   **Components:**\n        *   `E_v`: Input visual features.\n        *   `Conv 1D`: 1D convolutional layers for feature extraction.\n        *   `SRU`: A lightweight recurrent unit (likely a Sparse Recurrent Unit) for modeling temporal dependencies.\n        *   `⊕`: Element-wise addition (sum) operation.\n    *   **Variables/Data:**\n        *   `E_v`: Input features.\n        *   `Ê_v`: Output features after the LightVid block.\n\n**(3) What is the main insight or conclusion conveyed by this figure?**\n\nThe main insight conveyed by this figure is that **Swift-Net is a unified, end-to-end deep learning model designed for audio-visual speech separation.** It achieves this by:\n\n1.  **Integr",
+      "latency": 9.94,
+      "usage": {
+        "prompt_tokens": 945,
+        "completion_tokens": 800,
+        "total_tokens": 1745
+      }
+    }
+  },
+  {
+    "task": {
+      "id": "multimodal_fig_004",
+      "title": "图表理解·图4",
+      "type": "multimodal",
+      "prompt": "Describe this figure from the paper in detail:\n(1) What type of visualization is this (architecture diagram, chart, table, plot, etc.)?\n(2) What are the key components, variables, or data shown?\n(3) What is the main insight or conclusion conveyed by this figure?",
+      "scoring_rubric": "5=准确描述图表类型和关键信息, 3=部分正确, 1=错误",
+      "image_path": "C:\\Users\\30906\\Desktop\\实训营\\domestic-ai-makers-pbl-phase1\\day1-model-evaluation-binyu\\outputs-binyu\\figures\\figure_4_arch.png"
+    },
+    "model": {
+      "id": "deepseek-ai/DeepSeek-V4-Flash",
+      "label": "DeepSeek"
+    },
+    "score": 1,
+    "ok": false,
+    "output": {
+      "ok": false,
+      "text": "Not a VLM",
+      "latency": 0,
+      "usage": {}
+    }
+  },
+  {
+    "task": {
+      "id": "multimodal_fig_004",
+      "title": "图表理解·图4",
+      "type": "multimodal",
+      "prompt": "Describe this figure from the paper in detail:\n(1) What type of visualization is this (architecture diagram, chart, table, plot, etc.)?\n(2) What are the key components, variables, or data shown?\n(3) What is the main insight or conclusion conveyed by this figure?",
+      "scoring_rubric": "5=准确描述图表类型和关键信息, 3=部分正确, 1=错误",
+      "image_path": "C:\\Users\\30906\\Desktop\\实训营\\domestic-ai-makers-pbl-phase1\\day1-model-evaluation-binyu\\outputs-binyu\\figures\\figure_4_arch.png"
+    },
+    "model": {
+      "id": "Qwen/Qwen2.5-72B-Instruct",
+      "label": "Qwen2.5-72B (Alibaba)"
+    },
+    "score": 1,
+    "ok": false,
+    "output": {
+      "ok": false,
+      "text": "Not a VLM",
+      "latency": 0,
+      "usage": {}
+    }
+  },
+  {
+    "task": {
+      "id": "multimodal_fig_004",
+      "title": "图表理解·图4",
+      "type": "multimodal",
+      "prompt": "Describe this figure from the paper in detail:\n(1) What type of visualization is this (architecture diagram, chart, table, plot, etc.)?\n(2) What are the key components, variables, or data shown?\n(3) What is the main insight or conclusion conveyed by this figure?",
+      "scoring_rubric": "5=准确描述图表类型和关键信息, 3=部分正确, 1=错误",
+      "image_path": "C:\\Users\\30906\\Desktop\\实训营\\domestic-ai-makers-pbl-phase1\\day1-model-evaluation-binyu\\outputs-binyu\\figures\\figure_4_arch.png"
+    },
+    "model": {
+      "id": "zai-org/GLM-5.2",
+      "label": "GLM-5.2 (Zhipu)"
+    },
+    "score": 1,
+    "ok": false,
+    "output": {
+      "ok": false,
+      "text": "Not a VLM",
+      "latency": 0,
+      "usage": {}
+    }
+  },
+  {
+    "task": {
+      "id": "multimodal_fig_004",
+      "title": "图表理解·图4",
+      "type": "multimodal",
+      "prompt": "Describe this figure from the paper in detail:\n(1) What type of visualization is this (architecture diagram, chart, table, plot, etc.)?\n(2) What are the key components, variables, or data shown?\n(3) What is the main insight or conclusion conveyed by this figure?",
+      "scoring_rubric": "5=准确描述图表类型和关键信息, 3=部分正确, 1=错误",
+      "image_path": "C:\\Users\\30906\\Desktop\\实训营\\domestic-ai-makers-pbl-phase1\\day1-model-evaluation-binyu\\outputs-binyu\\figures\\figure_4_arch.png"
+    },
+    "model": {
+      "id": "Pro/moonshotai/Kimi-K2.6",
+      "label": "Kimi-K2.6 (Moonshot)"
+    },
+    "score": 5,
+    "ok": true,
+    "output": {
+      "ok": true,
+      "text": "Here is a detailed description of the figure.\n\n### (1) Type of Visualization\nThis is a **neural network architecture diagram** (specifically, a structural block diagram). It depicts the data flow, tensor transformations, and connectivity inside a single building block—labeled the **ETCS block**—of a deep learning model. The diagram uses 3D tensor blocks, arrows, and annotated operations to show how an input tensor is processed step-by-step to produce an output tensor of the same shape.\n\n---\n\n### (2) Key Components, Variables, and Data Shown\n\n**Input and Output Tensors**\n*   **$E_a(i) \\in \\mathbb{R}^{C_a \\times T'_a \\times F}$**: The input tensor to the $i$-th block, with $C_a$ channels, $T'_a$ time steps, and $F$ frequency bins (shown as the large red block on the left).\n*   **$E_a(i+1) \\in \\mathbb{R}^{C_a \\times T'_a \\times F}$**: The output tensor of the block, having the exact same dimensions as the input, indicating this is a **residual-style block** that can be stacked repeatedly.\n\n**Intermediate Tensors (Latent Representations)**\n*   **$A_0$**: An intermediate green block with halved dimensions ($C_a \\times \\frac{T'_a}{2} \\times \\frac{F}{2}$), suggesting the input is downsampled or reshaped before deep processing.\n*   **$A_f$**: The output of the bidirectional branch, with dimensions restored to $C_a \\times \\frac{T'_a}{2} \\times \\frac{F}{2}$.\n*   **$A_t$**: The output of the unidirectional branch, maintaining dimensions $C_a \\times \\frac{T'_a}{2} \\times \\frac{F}{2}$.\n*   **$A_{attn}$**: The output after causal self-attention, still in the compressed space ($C_a \\times \\frac{T'_a}{2} \\times \\frac{F}{2}$), before being mapped back to the full-resolution output $E_a(i+1)$.\n\n**Core Operations and Modules**\n*   **Unfold**: A reshaping/unfolding operation applied to $A_0$ to prepare the tensor for sequential processing in the Bi-GSRU.\n*   **Bi-GSRU** (Bidirectional Grouped SRU): Enclosed in an orange dashed box. It contains two parallel streams (representing forward and backward directions) that process the unfolded input. Their outputs are concatenated (**Cat**).\n*   **TConv 1D**: A 1D Transposed (or Temporal) Convolution layer that projects the concatenated features.\n*   **Uni-GSRU** (Unidirectional Grouped SRU): Enclosed in a blue dashed box. It also contains parallel grouped streams, but operates unidirectionally (causally). Its outputs are also concatenated (**Cat**).\n*   **Causal self-attention**: A self-attention mechanism that enforces temporal causality (no look-ahead).\n*   **Residual Additions (⊕)**: Skip connections bypass the main Bi-GSRU and Uni-GSRU branches and add the input of each branch to its output, aiding gradient flow and training stability.\n\n**Dimensional Notation**\n*   **$C_a$**: Channel/feature dimension (height of the 3D blocks).\n*   **$T'_a$ / $\\frac{T'_a}{2}$**: Temporal dimension (depth), halved in the latent space.\n*   **$F$ / $\\frac{F}{2}$ / $F'$**: Frequency dimension (width), halved in the latent space, with $F'$ representing an intermediate unfolded feature size",
+      "latency": 235.52,
+      "usage": {
+        "prompt_tokens": 690,
+        "completion_tokens": 7165,
+        "total_tokens": 7855,
+        "completion_tokens_details": {
+          "reasoning_tokens": 6365
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 690
+      }
+    }
+  },
+  {
+    "task": {
+      "id": "multimodal_fig_004",
+      "title": "图表理解·图4",
+      "type": "multimodal",
+      "prompt": "Describe this figure from the paper in detail:\n(1) What type of visualization is this (architecture diagram, chart, table, plot, etc.)?\n(2) What are the key components, variables, or data shown?\n(3) What is the main insight or conclusion conveyed by this figure?",
+      "scoring_rubric": "5=准确描述图表类型和关键信息, 3=部分正确, 1=错误",
+      "image_path": "C:\\Users\\30906\\Desktop\\实训营\\domestic-ai-makers-pbl-phase1\\day1-model-evaluation-binyu\\outputs-binyu\\figures\\figure_4_arch.png"
+    },
+    "model": {
+      "id": "Qwen/Qwen3-VL-8B-Instruct",
+      "label": "Qwen-VL-8B (Alibaba)"
+    },
+    "score": 5,
+    "ok": true,
+    "output": {
+      "ok": true,
+      "text": "This is a detailed architectural diagram illustrating the structure of the FTGS (likely a variant of a temporal or spatio-temporal transformer or recurrent neural network block, based on the components shown). Below is a breakdown of your questions:\n\n---\n\n**(1) What type of visualization is this?**\n\nThis is an **architecture diagram** (specifically, a **block diagram** or **flowchart** of a neural network module). It visually represents the data flow, component interactions, and transformations within a single computational block (the FTGS block). It uses standardized graphical elements (boxes for modules, arrows for data flow, dashed lines for optional or auxiliary paths) to convey how inputs are processed through a sequence of operations to produce outputs.\n\n---\n\n**(2) What are the key components, variables, or data shown?**\n\nThe key elements include:\n\n- **Input tensor**: `Eₐ(i) ∈ R^{Cₐ × Tₐ' × F}` — a 3D tensor representing input data at time step `i`, with dimensions: channel `Cₐ`, temporal length `Tₐ'`, and feature depth `F`.\n\n- **Initial state**: `A₀` — the initial hidden state (or feature map) derived from the input tensor via a split (dashed line shows `F/2` split).\n\n- **Unfold operation**: A preprocessing step that likely reshapes or prepares the tensor for processing by the GSRU units.\n\n- **Bi-GSRU (Bidirectional Grouped Sru)**: A core component that processes data in both forward and backward directions (indicated by the bidirectional arrows within the block). It takes `A₀` as input and produces `A_f` (forward hidden state).\n\n- **TConv 1D**: A 1D temporal convolution layer that combines the output from Bi-GSRU (`A_f`) with the original input `Eₐ(i)` (via a `+` symbol indicating addition or residual connection).\n\n- **Uni-GSRU (Unidirectional Grouped Sru)**: Another core component, processing data in one direction (forward only). It takes the output from TConv 1D (`A_f`) and produces `A_t` (temporal hidden state).\n\n- **Causal self-attention**: A mechanism that applies attention over the temporal dimension, but only allows attention to past or current time steps (causal), ensuring temporal causality. It takes `A_t` as input and produces `A_atttn`.\n\n- **Output tensor**: `Eₐ(i+1) ∈ R^{Cₐ × Tₐ' × F}` — the final output tensor, which is reconstructed from `A_atttn` and likely includes a residual connection or direct mapping back to the original tensor dimensions.\n\n- **Variables and dimensions**:\n  - `Tₐ'`: Temporal dimension (likely a reduced or processed version of the original temporal length).\n  - `F`: Feature depth (number of channels or features).\n  - `Cₐ`: Channel dimension.\n  - `i`: Current time step.\n  - `i+1`: Next time step.\n\n- **Operations**:\n  - `Unfold`: Likely reshapes or flattens the tensor for processing.\n  - `Cat`: Concatenation of tensors (e.g., combining features from different paths).\n  - `+`: Element-wise addition (common in residual networks).\n  - `TConv 1D`: 1D temporal convolution.\n  - `Causal self-attention`: Attention mechanism with causal masking.\n\n---\n\n**(3) What is the main insight or conclusion conveyed by this figure?**\n\nThe main insight is that the **FTGS block is a hybrid temporal processing unit that combines bidirectional and unidirectional recurrent-like processing (via GSRU units) with causal self-attention to model temporal dependencies in a structured, causal manner**.\n\nSpecific",
+      "latency": 7.97,
+      "usage": {
+        "prompt_tokens": 512,
+        "completion_tokens": 800,
+        "total_tokens": 1312
+      }
+    }
+  },
+  {
+    "task": {
+      "id": "multimodal_fig_005",
+      "title": "图表理解·图5",
+      "type": "multimodal",
+      "prompt": "Describe this figure from the paper in detail:\n(1) What type of visualization is this (architecture diagram, chart, table, plot, etc.)?\n(2) What are the key components, variables, or data shown?\n(3) What is the main insight or conclusion conveyed by this figure?",
+      "scoring_rubric": "5=准确描述图表类型和关键信息, 3=部分正确, 1=错误",
+      "image_path": "C:\\Users\\30906\\Desktop\\实训营\\domestic-ai-makers-pbl-phase1\\day1-model-evaluation-binyu\\outputs-binyu\\figures\\figure_5_arch.png"
+    },
+    "model": {
+      "id": "deepseek-ai/DeepSeek-V4-Flash",
+      "label": "DeepSeek"
+    },
+    "score": 1,
+    "ok": false,
+    "output": {
+      "ok": false,
+      "text": "Not a VLM",
+      "latency": 0,
+      "usage": {}
+    }
+  },
+  {
+    "task": {
+      "id": "multimodal_fig_005",
+      "title": "图表理解·图5",
+      "type": "multimodal",
+      "prompt": "Describe this figure from the paper in detail:\n(1) What type of visualization is this (architecture diagram, chart, table, plot, etc.)?\n(2) What are the key components, variables, or data shown?\n(3) What is the main insight or conclusion conveyed by this figure?",
+      "scoring_rubric": "5=准确描述图表类型和关键信息, 3=部分正确, 1=错误",
+      "image_path": "C:\\Users\\30906\\Desktop\\实训营\\domestic-ai-makers-pbl-phase1\\day1-model-evaluation-binyu\\outputs-binyu\\figures\\figure_5_arch.png"
+    },
+    "model": {
+      "id": "Qwen/Qwen2.5-72B-Instruct",
+      "label": "Qwen2.5-72B (Alibaba)"
+    },
+    "score": 1,
+    "ok": false,
+    "output": {
+      "ok": false,
+      "text": "Not a VLM",
+      "latency": 0,
+      "usage": {}
+    }
+  },
+  {
+    "task": {
+      "id": "multimodal_fig_005",
+      "title": "图表理解·图5",
+      "type": "multimodal",
+      "prompt": "Describe this figure from the paper in detail:\n(1) What type of visualization is this (architecture diagram, chart, table, plot, etc.)?\n(2) What are the key components, variables, or data shown?\n(3) What is the main insight or conclusion conveyed by this figure?",
+      "scoring_rubric": "5=准确描述图表类型和关键信息, 3=部分正确, 1=错误",
+      "image_path": "C:\\Users\\30906\\Desktop\\实训营\\domestic-ai-makers-pbl-phase1\\day1-model-evaluation-binyu\\outputs-binyu\\figures\\figure_5_arch.png"
+    },
+    "model": {
+      "id": "zai-org/GLM-5.2",
+      "label": "GLM-5.2 (Zhipu)"
+    },
+    "score": 1,
+    "ok": false,
+    "output": {
+      "ok": false,
+      "text": "Not a VLM",
+      "latency": 0,
+      "usage": {}
+    }
+  },
+  {
+    "task": {
+      "id": "multimodal_fig_005",
+      "title": "图表理解·图5",
+      "type": "multimodal",
+      "prompt": "Describe this figure from the paper in detail:\n(1) What type of visualization is this (architecture diagram, chart, table, plot, etc.)?\n(2) What are the key components, variables, or data shown?\n(3) What is the main insight or conclusion conveyed by this figure?",
+      "scoring_rubric": "5=准确描述图表类型和关键信息, 3=部分正确, 1=错误",
+      "image_path": "C:\\Users\\30906\\Desktop\\实训营\\domestic-ai-makers-pbl-phase1\\day1-model-evaluation-binyu\\outputs-binyu\\figures\\figure_5_arch.png"
+    },
+    "model": {
+      "id": "Pro/moonshotai/Kimi-K2.6",
+      "label": "Kimi-K2.6 (Moonshot)"
+    },
+    "score": 5,
+    "ok": true,
+    "output": {
+      "ok": true,
+      "text": "Here is a detailed description of Figure 4 from the paper.\n\n### (1) Type of Visualization\nThis is a **neural network architecture diagram** (specifically, a structural block diagram). It illustrates the data flow and operations inside a single network module called the **FTGS block**, showing how an input audio feature tensor is transformed into a refined output tensor via a sequence of sub-modules, operations, and residual skip connections.\n\n---\n\n### (2) Key Components, Variables, and Data Shown\n\n**Input and Output Tensors**\n*   **$E_a(i) \\in \\mathbb{R}^{C_a \\times T'_a \\times F}$**: The input audio feature tensor (large pink cube on the left), with channel dimension $C_a$, temporal dimension $T'_a$, and frequency dimension $F$.\n*   **$E_a(i+1) \\in \\mathbb{R}^{C_a \\times T'_a \\times F}$**: The output refined feature tensor (large pink cube on the right), having the same dimensions as the input, indicating the block performs feature refinement rather than resolution change overall.\n\n**Intermediate Feature Maps**\n*   **$A_0$**: An initial downsampled/projected representation (green cuboid) with halved dimensions $C_a \\times \\frac{T'_a}{2} \\times \\frac{F}{2}$.\n*   **$A_f$**: The output of the internal layers within the Bi-GSRU before concatenation.\n*   **$A_t$**: The output of the internal layers within the UNi-GSRU before concatenation.\n*   **$A_{attn}$**: The feature map after the causal self-attention module, still at the reduced internal resolution $\\frac{T'_a}{2} \\times \\frac{F}{2}$, before being mapped back to the full-resolution output.\n\n**Core Sub-modules and Operations**\n*   **Unfold**: A reshaping/sliding-window operation (blue rectangle) that prepares the tensor for grouped recurrent processing.\n*   **Bi-GSRU** (Bidirectional Grouped SRU): Enclosed in an orange dashed box. It contains multiple parallel grouped SRU layers that process the input in two directions. Their outputs are **concatenated** (\"Cat\") and passed through a **TConv 1D** (1D transposed convolution).\n*   **UNi-GSRU** (Unidirectional Grouped SRU): Enclosed in a blue dashed box. It contains multiple grouped SRU layers that process the input in a single causal direction, followed by a **concatenation** (\"Cat\").\n*   **Causal Self-Attention**: An attention module (blue rectangle) that aggregates global context while respecting temporal causality (i.e., only attending to past and present frames).\n*   **Skip Connections**: Residual pathways (curved black arrows) that bypass the Bi-GSRU and UNi-GSRU submodules.\n*   **Element-wise Addition (⊕)**: Two nodes that merge the main pathway with the skip connections via residual addition.\n\n---\n\n### (3) Main Insight or Conclusion\n\nThe figure conveys the architectural design of the **FTGS block** as an **efficient, multi-stage feature refinement unit** for audio separation. Its key design principles are:\n\n1.  **Hierarchical Recurrent Processing**: The block uses a cascade of a **bidirectional** grouped SRU (to capture rich, non-causal contextual dependencies, likely along the frequency axis) and a **unidirectional** grouped SRU (to enforce temporal causality), followed by **causal self-attention** for global dependency modeling.\n2.  **Computational Efficiency**: By employing **Grouped SRUs** (both Bi- and Uni- variants), the block partitions the input and hidden states into $G$ independent groups. As detailed in the accompanying text, this reduces both",
+      "latency": 173.16,
+      "usage": {
+        "prompt_tokens": 3099,
+        "completion_tokens": 5096,
+        "total_tokens": 8195,
+        "completion_tokens_details": {
+          "reasoning_tokens": 4296
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 3099
+      }
+    }
+  },
+  {
+    "task": {
+      "id": "multimodal_fig_005",
+      "title": "图表理解·图5",
+      "type": "multimodal",
+      "prompt": "Describe this figure from the paper in detail:\n(1) What type of visualization is this (architecture diagram, chart, table, plot, etc.)?\n(2) What are the key components, variables, or data shown?\n(3) What is the main insight or conclusion conveyed by this figure?",
+      "scoring_rubric": "5=准确描述图表类型和关键信息, 3=部分正确, 1=错误",
+      "image_path": "C:\\Users\\30906\\Desktop\\实训营\\domestic-ai-makers-pbl-phase1\\day1-model-evaluation-binyu\\outputs-binyu\\figures\\figure_5_arch.png"
+    },
+    "model": {
+      "id": "Qwen/Qwen3-VL-8B-Instruct",
+      "label": "Qwen-VL-8B (Alibaba)"
+    },
+    "score": 5,
+    "ok": true,
+    "output": {
+      "ok": true,
+      "text": "Based on the provided image and text, here is a detailed description of Figure 4:\n\n(1) What type of visualization is this (architecture diagram, chart, table, plot, etc.)?\nThis is an **architecture diagram**. It visually represents the structural components and data flow of the FTGS (Feature Transformation and Grouped SRU) block, which is a core component of a neural network model. The diagram uses boxes to represent tensors or feature maps, arrows to show data flow, and labeled blocks to denote specific operations or modules (like Bi-GSRU, Uni-GSRU, Causal self-attention). It is not a chart, table, or plot in the statistical sense.\n\n(2) What are the key components, variables, or data shown?\nThe key components and data shown in the diagram are:\n*   **Input Feature Map**: `E_a(i) ∈ R^(C_a × T'_a × F)`, representing the audio features at time step `i`.\n*   **Initial Feature Map**: `A_0`, which is derived from `E_a(i)` via unfolding.\n*   **Bi-GSRU (Bidirectional Grouped SRU)**: A module that processes the unfolded features in both forward and backward directions. It takes `A_0` and `TConv 1D` output as inputs.\n*   **TConv 1D**: A 1D transpose convolution layer that processes the feature map.\n*   **Uni-GSRU (Unidirectional Grouped SRU)**: A module that processes the feature map in a single direction (forward). It takes the output from `TConv 1D` and `A_f` as inputs.\n*   **Causal Self-Attention**: A module that applies causal self-attention to the features, ensuring that predictions at time `t` only depend on past and present information.\n*   **Output Feature Map**: `E_a(i+1) ∈ R^(C_a × T'_a × F)`, representing the audio features at the next time step `i+1`.\n*   **Intermediate Feature Maps**: `A_f` (forward feature map after Bi-GSRU) and `A_t` (feature map after Uni-GSRU).\n*   **Data Flow**: The diagram shows a clear sequence: Input → Unfold → Bi-GSRU → TConv 1D → Uni-GSRU → Causal Self-Attention → Output.\n\n(3) What is the main insight or conclusion conveyed by this figure?\nThe main insight conveyed by this figure is that the FTGS block is designed to efficiently process and transform audio features over time using a combination of bidirectional and unidirectional Grouped SRUs, followed by a causal self-attention mechanism. The use of Grouped SRUs (Bi-GSRU and Uni-GSRU) significantly reduces the parameter count and computational complexity of the model, as explained in the accompanying text. This architecture allows the model to capture both short-term dependencies (via SRUs) and long-range dependencies (via self-attention) while being computationally efficient, making it suitable for real-time or resource-constrained applications. The block is part of a larger system for audio feature reconstruction and separation, as indicated by the context in Section 4.3.",
+      "latency": 14.18,
+      "usage": {
+        "prompt_tokens": 2375,
+        "completion_tokens": 675,
+        "total_tokens": 3050
+      }
+    }
+  }
+]

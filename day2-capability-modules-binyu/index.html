@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Day2 能力模块构建 — PaperMind</title>
+<style>
+:root{--bg:#0d1117;--card:#161b22;--border:#30363d;--text:#c9d1d9;--muted:#8b949e;--accent:#58a6ff}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,sans-serif;line-height:1.55}
+header{background:var(--card);border-bottom:1px solid var(--border);padding:28px 32px;text-align:center}
+header h1{font-size:24px;margin-bottom:6px} header p{color:var(--muted);font-size:13px;max-width:760px;margin:0 auto}
+main{max-width:1000px;margin:0 auto;padding:20px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:14px}
+.panel{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:20px}
+.tag{display:inline-block;border-radius:999px;padding:3px 10px;font-size:11px;font-weight:600}
+.tag-main{background:#1b5e20;color:#a5d6a7}
+.tag-mod{background:#0d47a1;color:#90caf9}
+.tag-api{background:#4a148c;color:#ce93d8}
+h2{margin:10px 0 8px;font-size:20px}
+.muted{color:var(--muted);font-size:13px;margin-bottom:12px;line-height:1.5}
+.btn{display:inline-block;text-decoration:none;background:var(--accent);color:#000;border-radius:6px;padding:8px 14px;font-weight:650;font-size:13px;margin:3px 4px 3px 0;transition:.15s}
+.btn:hover{opacity:.85}
+.btn-ghost{background:transparent;border:1px solid var(--border);color:var(--text)}
+code{background:#1c2129;border:1px solid var(--border);border-radius:4px;padding:1px 6px;font-size:12px}
+.boundary{background:#1c2129;border:1px solid var(--border);border-left:3px solid var(--accent);border-radius:4px;padding:12px 16px;margin-top:14px;font-size:13px;color:var(--muted)}
+.boundary b{color:var(--text)}
+.file-list{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:10px}
+.file-list a{color:var(--accent);font-size:12px;text-decoration:none}
+.file-list a:hover{text-decoration:underline}
+@media(max-width:768px){.grid{grid-template-columns:1fr}.file-list{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header>
+  <h1>Day2 能力模块构建</h1>
+  <p>PaperMind · AI Learning Capability Module — 把 Prompt Engineering、Context Engineering、结构化输出、多模态上下文抽取和 AI Coding 封装成 Day3 可调用的论文阅读能力模块。</p>
+</header>
+<main>
+
+<div class="grid">
+  <div class="panel">
+    <span class="tag tag-main">主产物</span>
+    <h2>产品控制台</h2>
+    <p class="muted">汇集全部 Day2 产物：Prompt Library、Schemas、评测用例、Agent Handoff 合同。</p>
+    <a class="btn" href="outputs/Day2_产品控制台.html">打开控制台</a>
+    <a class="btn btn-ghost" href="outputs/Day2_产品Demo.html">产品 Demo</a>
+  </div>
+  <div class="panel">
+    <span class="tag tag-mod">能力模块</span>
+    <h2>Prompt Library</h2>
+    <p class="muted">6 条 Prompt 资产：system / task / repair / handoff，模型路由由 Day1 决定。</p>
+    <a class="btn" href="outputs/prompt_library.json">查看提示词库</a>
+  </div>
+  <div class="panel">
+    <span class="tag tag-api">Day3 接口</span>
+    <h2>Agent Handoff</h2>
+    <p class="muted">Day3 Agent 启动时读取的"合同"，定义了 4 个可调用动作及其输入输出。</p>
+    <a class="btn" href="outputs/agent_handoff/day2_agent_contract.json">查看合约</a>
+  </div>
+</div>
+
+<div class="panel">
+  <h2>全部产物索引</h2>
+  <div class="file-list">
+    <a href="outputs/product_spec.json">product_spec.json — 产品规格</a>
+    <a href="outputs/prompt_library.json">prompt_library.json — 提示词库</a>
+    <a href="outputs/eval_cases.json">eval_cases.json — 评测用例</a>
+    <a href="outputs/engine_run_report.json">engine_run_report.json — 运行报告</a>
+    <a href="outputs/schemas/review_card.schema.json">review_card.schema.json</a>
+    <a href="outputs/schemas/answer_grading.schema.json">answer_grading.schema.json</a>
+    <a href="outputs/schemas/multimodal_observation.schema.json">multimodal_observation.schema.json</a>
+    <a href="outputs/schemas/agent_handoff.schema.json">agent_handoff.schema.json</a>
+    <a href="outputs/context_pack/day1_model_brief.json">day1_model_brief.json — 模型路由</a>
+    <a href="outputs/context_pack/course_seed.md">course_seed.md — 论文阅读种子</a>
+    <a href="outputs/context_pack/user_scenarios.json">user_scenarios.json — 用户场景</a>
+    <a href="outputs/context_pack/device_constraints.md">device_constraints.md — 设备约束</a>
+    <a href="outputs/agent_handoff/day2_agent_contract.json">day2_agent_contract.json — Agent 合同</a>
+    <a href="outputs/agent_handoff/day2_to_day3_brief.md">day2_to_day3_brief.md — 交接说明</a>
+    <a href="outputs/engineering_critique.md">engineering_critique.md — 工程评审</a>
+  </div>
+</div>
+
+<div class="boundary">
+  <b>本日边界</b> — Day2 定义可调用能力、结构化输出格式、多模态上下文 Schema 和评测样例。这些是"能力定义文件"，不是运行着的程序。Day3 才把这些能力放入本地桌面 Agent Core 真正执行。
+</div>
+
+</main>
+</body>
+</html>

@@ -1,0 +1,56 @@
+{
+  "generated_at": "2026-06-22T14:39:24",
+  "purpose": "将 Day1 论文阅读理解能力评估结果转化为 Day2 的模型路由依据。",
+  "product_direction": "论文学术阅读理解：摘要提炼、方法提取、术语翻译、场景推理、幻觉检测、图表理解",
+  "router": {
+    "content_summarizer": {
+      "preferred_model": "DeepSeek",
+      "evidence_task": "paper_summary_001",
+      "score": 5,
+      "fallback_model": "Qwen2.5-72B (Alibaba)",
+      "fallback_rule": "如输出为空/不可解析/延迟过高，切换到兜底模型"
+    },
+    "info_extractor": {
+      "preferred_model": "Qwen-VL-8B (Alibaba)",
+      "evidence_task": "paper_methods_002",
+      "score": 4,
+      "fallback_model": "Qwen2.5-72B (Alibaba)",
+      "fallback_rule": "如输出为空/不可解析/延迟过高，切换到兜底模型"
+    },
+    "translator": {
+      "preferred_model": "Qwen-VL-8B (Alibaba)",
+      "evidence_task": "paper_translate_003",
+      "score": 5,
+      "fallback_model": "Qwen2.5-72B (Alibaba)",
+      "fallback_rule": "如输出为空/不可解析/延迟过高，切换到兜底模型"
+    },
+    "scenario_analyst": {
+      "preferred_model": "Qwen-VL-8B (Alibaba)",
+      "evidence_task": "paper_scenario_004",
+      "score": 5,
+      "fallback_model": "DeepSeek",
+      "fallback_rule": "如输出为空/不可解析/延迟过高，切换到兜底模型"
+    },
+    "fact_checker": {
+      "preferred_model": "Qwen-VL-8B (Alibaba)",
+      "evidence_task": "paper_hallucination_005",
+      "score": 5,
+      "fallback_model": "DeepSeek",
+      "fallback_rule": "如输出为空/不可解析/延迟过高，切换到兜底模型"
+    },
+    "multimodal_analyst": {
+      "preferred_model": "N/A",
+      "evidence_task": "multimodal_arch_006",
+      "score": 0,
+      "fallback_model": "N/A",
+      "fallback_rule": "如输出为空/不可解析/延迟过高，切换到兜底模型"
+    }
+  },
+  "day2_requirements": [
+    "提示词库必须区分内容摘要、信息抽取、翻译、推理、事实核查、多模态理解。",
+    "多模态任务必须单独记录候选模型、输入类型和 fallback。",
+    "结构化输出必须可解析为 JSON，并能被 Day3 Agent Core 读取。",
+    "Day2 需要交付可调用的能力模块和 handoff 合约。"
+  ],
+  "assessment_question": "学生能否说明为什么某个模型适合某个论文阅读任务，并能用失败样本支持 fallback 设计。"
+}

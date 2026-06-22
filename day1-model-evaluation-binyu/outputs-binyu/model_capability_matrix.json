@@ -1,0 +1,674 @@
+{
+  "generated_at": "2026-06-22T14:39:24",
+  "arena_name": "Day1 论文阅读理解能力评估",
+  "models": [
+    {
+      "label": "DeepSeek",
+      "id": "deepseek-ai/DeepSeek-V4-Flash"
+    },
+    {
+      "label": "GLM-5.2 (Zhipu)",
+      "id": "zai-org/GLM-5.2"
+    },
+    {
+      "label": "Kimi-K2.6 (Moonshot)",
+      "id": "Pro/moonshotai/Kimi-K2.6"
+    },
+    {
+      "label": "Qwen-VL-8B (Alibaba)",
+      "id": "Qwen/Qwen3-VL-8B-Instruct"
+    },
+    {
+      "label": "Qwen2.5-72B (Alibaba)",
+      "id": "Qwen/Qwen2.5-72B-Instruct"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "paper_summary_001",
+      "title": "论文创新点提炼",
+      "type": "text"
+    },
+    {
+      "id": "paper_methods_002",
+      "title": "方法/算法名提取",
+      "type": "text"
+    },
+    {
+      "id": "paper_translate_003",
+      "title": "中文翻译·术语保真",
+      "type": "text"
+    },
+    {
+      "id": "paper_scenario_004",
+      "title": "场景适配判断",
+      "type": "text"
+    },
+    {
+      "id": "paper_hallucination_005",
+      "title": "幻觉检测·未提及事实",
+      "type": "text"
+    },
+    {
+      "id": "multimodal_fig_001",
+      "title": "图表理解·图1",
+      "type": "multimodal"
+    },
+    {
+      "id": "multimodal_fig_002",
+      "title": "图表理解·图2",
+      "type": "multimodal"
+    },
+    {
+      "id": "multimodal_fig_003",
+      "title": "图表理解·图3",
+      "type": "multimodal"
+    },
+    {
+      "id": "multimodal_fig_004",
+      "title": "图表理解·图4",
+      "type": "multimodal"
+    },
+    {
+      "id": "multimodal_fig_005",
+      "title": "图表理解·图5",
+      "type": "multimodal"
+    }
+  ],
+  "matrix": [
+    {
+      "model_label": "DeepSeek",
+      "model_id": "deepseek-ai/DeepSeek-V4-Flash",
+      "avg_score": 2.9,
+      "avg_latency": 9.58,
+      "avg_tokens": 770.4,
+      "task_scores": {
+        "paper_summary_001": 5,
+        "paper_methods_002": 4,
+        "paper_translate_003": 5,
+        "paper_scenario_004": 5,
+        "paper_hallucination_005": 5,
+        "multimodal_fig_001": 1,
+        "multimodal_fig_002": 1,
+        "multimodal_fig_003": 1,
+        "multimodal_fig_004": 1,
+        "multimodal_fig_005": 1
+      },
+      "strengths": [
+        "论文创新点提炼",
+        "方法/算法名提取",
+        "中文翻译·术语保真",
+        "场景适配判断",
+        "幻觉检测·未提及事实"
+      ],
+      "risks": [
+        "图表理解·图1",
+        "图表理解·图2",
+        "图表理解·图3",
+        "图表理解·图4",
+        "图表理解·图5"
+      ],
+      "recommendation": [
+        "论文理解与创新提炼",
+        "结构化信息抽取",
+        "术语保真翻译",
+        "场景适配推理",
+        "事实诚实性审查"
+      ]
+    },
+    {
+      "model_label": "GLM-5.2 (Zhipu)",
+      "model_id": "zai-org/GLM-5.2",
+      "avg_score": 2.7,
+      "avg_latency": 29.02,
+      "avg_tokens": 1639.2,
+      "task_scores": {
+        "paper_summary_001": 5,
+        "paper_methods_002": 4,
+        "paper_translate_003": 5,
+        "paper_scenario_004": 5,
+        "paper_hallucination_005": 3,
+        "multimodal_fig_001": 1,
+        "multimodal_fig_002": 1,
+        "multimodal_fig_003": 1,
+        "multimodal_fig_004": 1,
+        "multimodal_fig_005": 1
+      },
+      "strengths": [
+        "论文创新点提炼",
+        "方法/算法名提取",
+        "中文翻译·术语保真",
+        "场景适配判断"
+      ],
+      "risks": [
+        "图表理解·图1",
+        "图表理解·图2",
+        "图表理解·图3",
+        "图表理解·图4",
+        "图表理解·图5"
+      ],
+      "recommendation": [
+        "论文理解与创新提炼",
+        "结构化信息抽取",
+        "术语保真翻译",
+        "场景适配推理",
+        "事实诚实性审查"
+      ]
+    },
+    {
+      "model_label": "Kimi-K2.6 (Moonshot)",
+      "model_id": "Pro/moonshotai/Kimi-K2.6",
+      "avg_score": 4.7,
+      "avg_latency": 118.16,
+      "avg_tokens": 4196.3,
+      "task_scores": {
+        "paper_summary_001": 5,
+        "paper_methods_002": 4,
+        "paper_translate_003": 5,
+        "paper_scenario_004": 5,
+        "paper_hallucination_005": 3,
+        "multimodal_fig_001": 5,
+        "multimodal_fig_002": 5,
+        "multimodal_fig_003": 5,
+        "multimodal_fig_004": 5,
+        "multimodal_fig_005": 5
+      },
+      "strengths": [
+        "论文创新点提炼",
+        "方法/算法名提取",
+        "中文翻译·术语保真",
+        "场景适配判断",
+        "图表理解·图1",
+        "图表理解·图2",
+        "图表理解·图3",
+        "图表理解·图4",
+        "图表理解·图5"
+      ],
+      "risks": [],
+      "recommendation": [
+        "论文理解与创新提炼",
+        "结构化信息抽取",
+        "术语保真翻译",
+        "场景适配推理",
+        "事实诚实性审查"
+      ]
+    },
+    {
+      "model_label": "Qwen-VL-8B (Alibaba)",
+      "model_id": "Qwen/Qwen3-VL-8B-Instruct",
+      "avg_score": 4.8,
+      "avg_latency": 6.58,
+      "avg_tokens": 1101.1,
+      "task_scores": {
+        "paper_summary_001": 4,
+        "paper_methods_002": 4,
+        "paper_translate_003": 5,
+        "paper_scenario_004": 5,
+        "paper_hallucination_005": 5,
+        "multimodal_fig_001": 5,
+        "multimodal_fig_002": 5,
+        "multimodal_fig_003": 5,
+        "multimodal_fig_004": 5,
+        "multimodal_fig_005": 5
+      },
+      "strengths": [
+        "论文创新点提炼",
+        "方法/算法名提取",
+        "中文翻译·术语保真",
+        "场景适配判断",
+        "幻觉检测·未提及事实",
+        "图表理解·图1",
+        "图表理解·图2",
+        "图表理解·图3",
+        "图表理解·图4",
+        "图表理解·图5"
+      ],
+      "risks": [],
+      "recommendation": [
+        "论文理解与创新提炼",
+        "结构化信息抽取",
+        "术语保真翻译",
+        "场景适配推理",
+        "事实诚实性审查"
+      ]
+    },
+    {
+      "model_label": "Qwen2.5-72B (Alibaba)",
+      "model_id": "Qwen/Qwen2.5-72B-Instruct",
+      "avg_score": 2.9,
+      "avg_latency": 7.96,
+      "avg_tokens": 556.6,
+      "task_scores": {
+        "paper_summary_001": 5,
+        "paper_methods_002": 4,
+        "paper_translate_003": 5,
+        "paper_scenario_004": 5,
+        "paper_hallucination_005": 5,
+        "multimodal_fig_001": 1,
+        "multimodal_fig_002": 1,
+        "multimodal_fig_003": 1,
+        "multimodal_fig_004": 1,
+        "multimodal_fig_005": 1
+      },
+      "strengths": [
+        "论文创新点提炼",
+        "方法/算法名提取",
+        "中文翻译·术语保真",
+        "场景适配判断",
+        "幻觉检测·未提及事实"
+      ],
+      "risks": [
+        "图表理解·图1",
+        "图表理解·图2",
+        "图表理解·图3",
+        "图表理解·图4",
+        "图表理解·图5"
+      ],
+      "recommendation": [
+        "论文理解与创新提炼",
+        "结构化信息抽取",
+        "术语保真翻译",
+        "场景适配推理",
+        "事实诚实性审查"
+      ]
+    }
+  ],
+  "leaderboards": {
+    "paper_summary_001": {
+      "task": {
+        "id": "paper_summary_001",
+        "title": "论文创新点提炼",
+        "type": "text"
+      },
+      "ranking": [
+        {
+          "model": "DeepSeek",
+          "score": 5,
+          "latency": 4.08,
+          "sample": "This paper addresses the problem that existing audio-visual speech separation methods have complex architectures and rely on future context, making them unsuitable for real-time applications. The key method is Swift-Net, a streaming model that uses a lightwei..."
+        },
+        {
+          "model": "Qwen2.5-72B (Alibaba)",
+          "score": 5,
+          "latency": 4.5,
+          "sample": "This paper addresses the challenge of creating a real-time, streaming audio-visual speech separation (AVSS) model that can efficiently extract a target speech signal from mixed signals using both auditory and visual cues. The key method involves the developme..."
+        },
+        {
+          "model": "GLM-5.2 (Zhipu)",
+          "score": 5,
+          "latency": 17.18,
+          "sample": "This paper addresses the problem that existing audio-visual speech separation (AVSS) methods rely on complex, offline architectures requiring future context, making them unsuitable for real-time applications. The key method is Swift-Net, a streaming AVSS mode..."
+        },
+        {
+          "model": "Kimi-K2.6 (Moonshot)",
+          "score": 5,
+          "latency": 44.31,
+          "sample": "This paper solves the problem that existing audio-visual speech separation methods are too complex and rely on future context, rendering them unsuitable for real-time applications. The key method is Swift-Net, a streaming causal architecture featuring a light..."
+        },
+        {
+          "model": "Qwen-VL-8B (Alibaba)",
+          "score": 4,
+          "latency": 2.23,
+          "sample": "This paper solves the problem of real-time audio-visual speech separation by addressing the limitations of existing methods that are non-causal, complex, and offline. The key method is Swift-Net, a streaming architecture that uses a lightweight visual module,..."
+        }
+      ]
+    },
+    "paper_methods_002": {
+      "task": {
+        "id": "paper_methods_002",
+        "title": "方法/算法名提取",
+        "type": "text"
+      },
+      "ranking": [
+        {
+          "model": "Qwen-VL-8B (Alibaba)",
+          "score": 4,
+          "latency": 3.25,
+          "sample": "- **Method name: Swift-Net** — A novel streaming audio-visual speech separation model designed for real-time applications with causal processing capabilities. - **Algorithm name: Grouped SRUs** — A mechanism to integrate historical information across differen..."
+        },
+        {
+          "model": "Qwen2.5-72B (Alibaba)",
+          "score": 4,
+          "latency": 4.21,
+          "sample": "- **RTFSNet**: A pipeline that inspired the proposed real-time streaming AVSS model. - **Swift-Net**: A novel streaming AVSS model designed for real-time applications. - **Visual Feature Extraction Module**: A lightweight component in Swift-Net for processing..."
+        },
+        {
+          "model": "DeepSeek",
+          "score": 4,
+          "latency": 10.55,
+          "sample": "- **Audio-visual speech separation (AVSS)**: A method to extract target speech from mixed audio using both auditory and visual (lip movement) cues. - **RTFSNet**: A real-time speech separation network that inspired the streaming pipeline of Swift-Net. - **Swi..."
+        },
+        {
+          "model": "GLM-5.2 (Zhipu)",
+          "score": 4,
+          "latency": 23.28,
+          "sample": "Here are the extracted method names, algorithm names, and model architecture component names from the abstract, each with a one-line description: * **Audio-visual speech separation (AVSS)**: A method that extracts a target speech signal from a mixed signal by..."
+        },
+        {
+          "model": "Kimi-K2.6 (Moonshot)",
+          "score": 4,
+          "latency": 59.49,
+          "sample": "- **Audio-visual speech separation (AVSS)**: A method that extracts a target speech signal from a mixed signal by leveraging both auditory and visual (lip movement) cues. - **RTFSNet**: An existing model pipeline that inspired the architectural design of the ..."
+        }
+      ]
+    },
+    "paper_translate_003": {
+      "task": {
+        "id": "paper_translate_003",
+        "title": "中文翻译·术语保真",
+        "type": "text"
+      },
+      "ranking": [
+        {
+          "model": "Qwen-VL-8B (Alibaba)",
+          "score": 5,
+          "latency": 1.95,
+          "sample": "摘要： 音频-视觉语音分离（AVSS）旨在通过利用听觉和视觉（唇部运动）线索，从混合信号中提取目标语音信号。然而，大多数现有的AVSS方法具有复杂的架构，并依赖未来上下文，仅适用于离线操作，因此不适合实时应用。受RTFSNet架构的启发，我们提出了一种新颖的流式AVSS模型，名为Swift-Net，该模型增强了实时应用所需的时间因果处理能力。Swift-Net采用轻量级视觉特征提取模块和高效的音频-视觉融合模块。此外，Swift-Net采用分组SRU模块，在不同特征空间中整合历史信息，从而提高历史信息的利用效率。..."
+        },
+        {
+          "model": "Qwen2.5-72B (Alibaba)",
+          "score": 5,
+          "latency": 7.96,
+          "sample": "摘要： 音频-视觉语音分离 (AVSS) 旨在通过利用听觉和视觉（唇部运动）线索从混合信号中提取目标语音信号。然而，大多数现有的 AVSS 方法具有复杂的架构，并依赖于未来的上下文，以离线方式运行，这使得它们不适合实时应用。受 RTFSNet 流水线的启发，我们提出了一种新的流式 AVSS 模型，命名为 Swift-Net，该模型增强了实时应用所需的因果处理能力。Swift-Net 采用了一个轻量级的视觉特征提取模块和一个高效的融合模块，用于音频-视觉集成。此外，Swift-Net 还使用了 Grouped SR..."
+        },
+        {
+          "model": "DeepSeek",
+          "score": 5,
+          "latency": 15.42,
+          "sample": "音频-视觉语音分离（AVSS）旨在通过利用听觉和视觉（唇部运动）线索，从混合信号中提取目标语音信号。然而，现有大多数AVSS方法架构复杂且依赖未来上下文信息，以离线方式运行，因此不适用于实时应用。受RTFSNet流水线的启发，我们提出了一种新颖的流式AVSS模型，命名为Swift-Net，该模型增强了实时应用所需的因果处理能力。Swift-Net采用轻量级视觉特征提取模块和高效的音频-视觉融合模块。此外，Swift-Net利用Grouped SRUs在不同特征空间中整合历史信息，从而提升历史信息的利用效率。我们进..."
+        },
+        {
+          "model": "GLM-5.2 (Zhipu)",
+          "score": 5,
+          "latency": 40.93,
+          "sample": "Audio-visual speech separation (AVSS) 旨在通过利用听觉和视觉（唇部运动）线索，从混合信号中提取目标语音信号。然而，现有的大多数 AVSS 方法架构复杂，且依赖于未来上下文进行离线操作，这使得它们不适用于实时应用。受 RTFSNet 流程的启发，我们提出了一种名为 Swift-Net 的新型流式 AVSS 模型，该模型增强了实时应用所需的因果处理能力。Swift-Net 采用了一个轻量级的视觉特征提取模块和一个高效的融合模块来实现视听整合。此外，Swift-Net 采用 Gro..."
+        },
+        {
+          "model": "Kimi-K2.6 (Moonshot)",
+          "score": 5,
+          "latency": 141.29,
+          "sample": "Audio-visual speech separation (AVSS) 旨在通过听觉与视觉（唇部运动）线索，从混合信号中提取目标语音信号。然而，大多数现有的 AVSS 方法架构复杂，且依赖未来上下文进行离线处理，这使其不适用于实时应用。受 RTFSNet 的启发，我们提出了一种新型的流式 AVSS 模型 Swift-Net，以增强实时应用所需的因果处理能力。Swift-Net 采用轻量级的视觉特征提取模块和高效的融合模块来实现视听融合。此外，Swift-Net 使用 Grouped SRU 来整合不同特征空间..."
+        }
+      ]
+    },
+    "paper_scenario_004": {
+      "task": {
+        "id": "paper_scenario_004",
+        "title": "场景适配判断",
+        "type": "text"
+      },
+      "ranking": [
+        {
+          "model": "Qwen-VL-8B (Alibaba)",
+          "score": 5,
+          "latency": 7.59,
+          "sample": "1. **Could this method be deployed on a mobile device for real-time use? Why or why not? Cite specific evidence from the abstract.** Yes, this method could be deployed on a mobile device for real-time use. The abstract explicitly states that Swift-Net is desi..."
+        },
+        {
+          "model": "DeepSeek",
+          "score": 5,
+          "latency": 15.18,
+          "sample": "Based on the abstract provided, here are the answers to your questions: ### 1. Could this method be deployed on a mobile device for real-time use? Why or why not? Cite specific evidence from the abstract. **Yes**, the method is designed for real-time use and ..."
+        },
+        {
+          "model": "Qwen2.5-72B (Alibaba)",
+          "score": 5,
+          "latency": 16.49,
+          "sample": "1. **Could this method be deployed on a mobile device for real-time use? Why or why not? Cite specific evidence from the abstract.** Yes, the method described in the abstract, Swift-Net, could be deployed on a mobile device for real-time use. The abstract exp..."
+        },
+        {
+          "model": "GLM-5.2 (Zhipu)",
+          "score": 5,
+          "latency": 43.28,
+          "sample": "Based on the abstract provided, here are the answers to your questions: **1. Could this method be deployed on a mobile device for real-time use? Why or why not? Cite specific evidence from the abstract.** Yes, this method is highly suitable for real-time use ..."
+        },
+        {
+          "model": "Kimi-K2.6 (Moonshot)",
+          "score": 5,
+          "latency": 70.23,
+          "sample": "Here are the answers based on the abstract: **1. Could this method be deployed on a mobile device for real-time use? Why or why not? Cite specific evidence from the abstract.** **Likely yes, or at least it is explicitly designed with the necessary architectur..."
+        }
+      ]
+    },
+    "paper_hallucination_005": {
+      "task": {
+        "id": "paper_hallucination_005",
+        "title": "幻觉检测·未提及事实",
+        "type": "text"
+      },
+      "ranking": [
+        {
+          "model": "Qwen-VL-8B (Alibaba)",
+          "score": 5,
+          "latency": 0.56,
+          "sample": "1. NOT IN ABSTRACT 2. NOT IN ABSTRACT 3. NOT IN ABSTRACT 4. NOT IN ABSTRACT 5. NOT IN ABSTRACT"
+        },
+        {
+          "model": "DeepSeek",
+          "score": 5,
+          "latency": 2.69,
+          "sample": "1. NOT IN ABSTRACT 2. NOT IN ABSTRACT 3. NOT IN ABSTRACT 4. NOT IN ABSTRACT 5. NOT IN ABSTRACT"
+        },
+        {
+          "model": "Qwen2.5-72B (Alibaba)",
+          "score": 5,
+          "latency": 6.62,
+          "sample": "1. The paper does not specify a particular variant or version of AVSS; it introduces a novel streaming AVSS model named Swift-Net. **NOT IN ABSTRACT** 2. The abstract does not provide information on the number of training hours or data points used in the expe..."
+        },
+        {
+          "model": "GLM-5.2 (Zhipu)",
+          "score": 3,
+          "latency": 20.45,
+          "sample": "1. The paper proposes a novel streaming AVSS model named Swift-Net, which focuses on causal processing for real-time applications. 2. NOT IN ABSTRACT 3. NOT IN ABSTRACT 4. NOT IN ABSTRACT 5. NOT IN ABSTRACT"
+        },
+        {
+          "model": "Kimi-K2.6 (Moonshot)",
+          "score": 3,
+          "latency": 122.05,
+          "sample": "1. The paper proposes a **streaming (causal) AVSS model named Swift-Net**, designed for real-time, causal processing. 2. **NOT IN ABSTRACT** 3. **NOT IN ABSTRACT** 4. **NOT IN ABSTRACT** 5. **NOT IN ABSTRACT**"
+        }
+      ]
+    },
+    "multimodal_fig_001": {
+      "task": {
+        "id": "multimodal_fig_001",
+        "title": "图表理解·图1",
+        "type": "multimodal"
+      },
+      "ranking": [
+        {
+          "model": "Qwen-VL-8B (Alibaba)",
+          "score": 5,
+          "latency": 7.01,
+          "sample": "This figure is an **architecture diagram** that illustrates a specific type of pooling operation used in sequence processing, likely within a neural network context. --- **(1) What type of visualization is this?** This is an **architecture diagram**. It visua..."
+        },
+        {
+          "model": "Kimi-K2.6 (Moonshot)",
+          "score": 5,
+          "latency": 91.64,
+          "sample": "Here is a detailed description of the figure: **(1) Type of Visualization** This is an **architecture/operation diagram** (specifically, a data-flow or block diagram). It does not plot numerical data, but rather schematically illustrates how a specific comput..."
+        },
+        {
+          "model": "DeepSeek",
+          "score": 1,
+          "latency": 0,
+          "sample": "Not a VLM"
+        },
+        {
+          "model": "Qwen2.5-72B (Alibaba)",
+          "score": 1,
+          "latency": 0,
+          "sample": "Not a VLM"
+        },
+        {
+          "model": "GLM-5.2 (Zhipu)",
+          "score": 1,
+          "latency": 0,
+          "sample": "Not a VLM"
+        }
+      ]
+    },
+    "multimodal_fig_002": {
+      "task": {
+        "id": "multimodal_fig_002",
+        "title": "图表理解·图2",
+        "type": "multimodal"
+      },
+      "ranking": [
+        {
+          "model": "Qwen-VL-8B (Alibaba)",
+          "score": 5,
+          "latency": 11.14,
+          "sample": "(1) This is an **architecture diagram** (also known as a system diagram or pipeline diagram). It visually represents the flow of data and processing steps within the SwiftNet model, showing how inputs (video and audio) are transformed through various modules ..."
+        },
+        {
+          "model": "Kimi-K2.6 (Moonshot)",
+          "score": 5,
+          "latency": 152.05,
+          "sample": "Here is a detailed description of the figure: ### (1) Type of Visualization This is a **neural network architecture diagram** (also called a model pipeline or block diagram). It illustrates the end-to-end data flow of a system called **Swift Net**, which perf..."
+        },
+        {
+          "model": "DeepSeek",
+          "score": 1,
+          "latency": 0,
+          "sample": "Not a VLM"
+        },
+        {
+          "model": "Qwen2.5-72B (Alibaba)",
+          "score": 1,
+          "latency": 0,
+          "sample": "Not a VLM"
+        },
+        {
+          "model": "GLM-5.2 (Zhipu)",
+          "score": 1,
+          "latency": 0,
+          "sample": "Not a VLM"
+        }
+      ]
+    },
+    "multimodal_fig_003": {
+      "task": {
+        "id": "multimodal_fig_003",
+        "title": "图表理解·图3",
+        "type": "multimodal"
+      },
+      "ranking": [
+        {
+          "model": "Qwen-VL-8B (Alibaba)",
+          "score": 5,
+          "latency": 9.94,
+          "sample": "Based on the provided figures and their captions, here is a detailed description: **(1) What type of visualization is this (architecture diagram, chart, table, plot, etc.)?** This is an **architecture diagram** (specifically, a system architecture diagram). I..."
+        },
+        {
+          "model": "Kimi-K2.6 (Moonshot)",
+          "score": 5,
+          "latency": 91.9,
+          "sample": "This figure presents **architecture diagrams** (specifically, deep neural network pipeline schematics) from a paper proposing **Swift-Net**, an audio-visual speech separation system. The figure contains two sub-diagrams: Figure 2 shows the end-to-end system p..."
+        },
+        {
+          "model": "DeepSeek",
+          "score": 1,
+          "latency": 0,
+          "sample": "Not a VLM"
+        },
+        {
+          "model": "Qwen2.5-72B (Alibaba)",
+          "score": 1,
+          "latency": 0,
+          "sample": "Not a VLM"
+        },
+        {
+          "model": "GLM-5.2 (Zhipu)",
+          "score": 1,
+          "latency": 0,
+          "sample": "Not a VLM"
+        }
+      ]
+    },
+    "multimodal_fig_004": {
+      "task": {
+        "id": "multimodal_fig_004",
+        "title": "图表理解·图4",
+        "type": "multimodal"
+      },
+      "ranking": [
+        {
+          "model": "Qwen-VL-8B (Alibaba)",
+          "score": 5,
+          "latency": 7.97,
+          "sample": "This is a detailed architectural diagram illustrating the structure of the FTGS (likely a variant of a temporal or spatio-temporal transformer or recurrent neural network block, based on the components shown). Below is a breakdown of your questions: --- **(1)..."
+        },
+        {
+          "model": "Kimi-K2.6 (Moonshot)",
+          "score": 5,
+          "latency": 235.52,
+          "sample": "Here is a detailed description of the figure. ### (1) Type of Visualization This is a **neural network architecture diagram** (specifically, a structural block diagram). It depicts the data flow, tensor transformations, and connectivity inside a single buildi..."
+        },
+        {
+          "model": "DeepSeek",
+          "score": 1,
+          "latency": 0,
+          "sample": "Not a VLM"
+        },
+        {
+          "model": "Qwen2.5-72B (Alibaba)",
+          "score": 1,
+          "latency": 0,
+          "sample": "Not a VLM"
+        },
+        {
+          "model": "GLM-5.2 (Zhipu)",
+          "score": 1,
+          "latency": 0,
+          "sample": "Not a VLM"
+        }
+      ]
+    },
+    "multimodal_fig_005": {
+      "task": {
+        "id": "multimodal_fig_005",
+        "title": "图表理解·图5",
+        "type": "multimodal"
+      },
+      "ranking": [
+        {
+          "model": "Qwen-VL-8B (Alibaba)",
+          "score": 5,
+          "latency": 14.18,
+          "sample": "Based on the provided image and text, here is a detailed description of Figure 4: (1) What type of visualization is this (architecture diagram, chart, table, plot, etc.)? This is an **architecture diagram**. It visually represents the structural components an..."
+        },
+        {
+          "model": "Kimi-K2.6 (Moonshot)",
+          "score": 5,
+          "latency": 173.16,
+          "sample": "Here is a detailed description of Figure 4 from the paper. ### (1) Type of Visualization This is a **neural network architecture diagram** (specifically, a structural block diagram). It illustrates the data flow and operations inside a single network module c..."
+        },
+        {
+          "model": "DeepSeek",
+          "score": 1,
+          "latency": 0,
+          "sample": "Not a VLM"
+        },
+        {
+          "model": "Qwen2.5-72B (Alibaba)",
+          "score": 1,
+          "latency": 0,
+          "sample": "Not a VLM"
+        },
+        {
+          "model": "GLM-5.2 (Zhipu)",
+          "score": 1,
+          "latency": 0,
+          "sample": "Not a VLM"
+        }
+      ]
+    }
+  },
+  "assessment_focus": [
+    "同一论文的多模型理解对比，形成可复用的工程证据。",
+    "保留原始输出、评分、失败样本和选型理由。",
+    "把论文阅读理解能力差异转化为 Day2 能力模块的模型路由规则。",
+    "文本模型和多模态模型分开评估，避免用单一总分覆盖任务差异。"
+  ]
+}
